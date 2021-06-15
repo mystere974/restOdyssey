@@ -1,0 +1,57 @@
+/* GENERAL */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
+  font-family: raleway;
+  --main-bg-color: #fff;
+  --main-text-color: rgb(25, 25, 25);
+  --nav-bg-color: #38424e;
+  --nav-text-color: #fff;
+  --title-color: #38424e;
+  --subtitle-color: #8e8e8c;
+  --subtitle2-color: #F9C9C8;
+  --subtitle3-color: #F76C6C;
+}
+#F9C9C8
+h1 {
+  color: var(--title-color);
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 35px;
+  font-family: montserrat;
+}
+
+h2 {
+  font-size: 19px;
+  color: var();
+  font-weight: 500;
+  font-family: raleway;
+}
+
+h3 {
+  font-size: 24px;
+  font-family: montserrat;
+  font-weight: 500;
+}
+
+
+
+
+
+/* NAVBAR */
+
+.nav-container (
+
+)
+
+.navbar .item a {
+  color: var(--nav-text-color);
+  text-transform: uppercase;
+  text-decoration: none;
+}
