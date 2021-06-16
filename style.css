@@ -46,7 +46,6 @@ h3 {
 
 
 
-
 /* NAVBAR */
 
 .navbar {
@@ -95,6 +94,7 @@ h3 {
   text-decoration: underline;
 }
 
+
 /* NAV BURGER MENU */
 
 .burger {
@@ -115,6 +115,7 @@ h3 {
   transform: translateX(0%) !important;
   opacity: 1;
 }
+
 
 /* NAV BURGER MENU ITEM */
 
@@ -146,6 +147,10 @@ h3 {
   .nav-burger-item a:hover {
     text-decoration: underline;
   }
+
+
+
+  /* NAV RESPONSIVE */
 
   @media screen and (max-width: 680px) {
     header {
@@ -209,6 +214,9 @@ h3 {
     display: none;
   }
 }
+
+
+
 /* Burger Menu Animation */
 
 @keyframes navLinkFade {
