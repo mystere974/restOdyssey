@@ -63,7 +63,7 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 100vw;
-  height: 50px;
+  height: 6vh;
   background-color: var(--subtitle2-color);
 }
 
@@ -174,7 +174,7 @@ header {
     }
 
     .nav-burger-item {
-      bottom: 49px;
+      bottom: 6vh;
       height: 40vh;
       width: 45vw;
       border-radius: 5px 0 0 0;
@@ -209,7 +209,7 @@ header {
 
   .nav-burger-item {
     right: 0px;
-    top: 49.5px;
+    top: 6vh;
     height: 60vh;
     width: 230px;
     border-radius: 0 0 0 5px;
