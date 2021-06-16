@@ -1,0 +1,109 @@
+/* General */
+
+/* :root {
+  font-size: 16px;
+  font-family: raleway , sans-serif;
+  --main-bg-color: #fff;
+  --main-text-color: rgb(25, 25, 25);
+  --nav-bg-color: #38424e;
+  --nav-text-color: #fff;
+  --title-color: #38424e;
+  --subtitle-color: #8e8e8c;
+  --subtitle2-color: #F9C9C8;
+  --subtitle3-color: #F76C6C;
+} */
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: center / cover no-repeat url("./ressources/bgmaincontact.jpg");
+  background-attachment: fixed;
+  background-position-y: -130px;
+}
+
+.container {
+  display:flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Main */
+
+.main {
+  width: 100%;
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main h1 {
+  color: var(--nav-text-color);
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 6vw;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+}
+
+
+/* Adresse */
+
+.adress-container {
+  width: 100%;
+  height: 30vh;
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+}
+
+.adress-container h2 {
+  margin: 10px 0 10px 15px;
+}
+
+.adress-item-container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70%;
+  transform: translateX(-2.5%);
+}
+
+.adress-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  height: 45%;
+}
+
+.adress-item img {
+  height: 2rem;
+  transform: translateY(35%);
+}
+
+.adress-item a {
+  text-decoration: none;
+  color: var(--main-text-color);
+  margin-left: 10px;
+}
+
+.adress-item p {
+  margin-left: 20px;
+  font-size: 0.75rem;
+}
+
+/* Map */
+
+.map {
+  width: 100%;
+  height: 30vh;
+}
+
+/* Formulaire de Contact*/
+
+.form-container {
+  width: 100%;
+  height: 40vh;
+  background-color: var(--main-bg-color);
+}

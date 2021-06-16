@@ -10,21 +10,25 @@
   font-size: 16px;
   font-family: raleway , sans-serif;
   --main-bg-color: #fff;
-  --main-text-color: rgb(25, 25, 25);
+  --main-text-color: rgb(50, 50, 50);
   --nav-bg-color: #38424e;
-  --nav-text-color: #fff;
+  --nav-text-color: #f1f1f1;
   --title-color: #38424e;
   --subtitle-color: #8e8e8c;
   --subtitle2-color: #F9C9C8;
   --subtitle3-color: #F76C6C;
+  --box-shadow-color: #c0c0c0;
 }
 
 body{
   overflow-x: hidden;
 }
 
+header {
+  box-shadow: var(--box-shadow-color) 0 1px 7px;
+}
 
-h1 {
+.main-title {
   color: var(--title-color);
   text-transform: uppercase;
   font-weight: 400;
@@ -32,13 +36,13 @@ h1 {
   font-family: montserrat, sans-serif;
 }
 
-h2 {
+.sub-title {
   font-size: 19px;
   font-weight: 500;
   font-family: raleway, sans-serif;
 }
 
-h3 {
+.subub-title {
   font-size: 24px;
   font-family: montserrat, sans-serif;
   font-weight: 500;
@@ -59,7 +63,7 @@ h3 {
   justify-content: space-between;
   align-items: center;
   width: 100vw;
-  height: 13vh;
+  height: 50px;
   background-color: var(--subtitle2-color);
 }
 
@@ -153,7 +157,7 @@ h3 {
 
   @media screen and (max-width: 680px) {
     header {
-      position: absolute;
+      position: fixed;
       bottom: 0;
     }
 
@@ -170,11 +174,12 @@ h3 {
     }
 
     .nav-burger-item {
-      bottom: 12vh;
+      bottom: 49px;
       height: 40vh;
       width: 45vw;
       border-radius: 5px 0 0 0;
       transform: translateX(200%);
+      box-shadow: var(--box-shadow-color) -1px -3px 3px;
     }
 
     .nav-burger-item a {
@@ -182,7 +187,7 @@ h3 {
     }
 
     .nav-active {
-      transform: translateX(75%) !important;
+      transform: translateX(65%) !important;
       opacity: 1;
     }
 
@@ -196,13 +201,20 @@ h3 {
   }
 
 @media screen and (min-width:681px) {
+
+  header {
+    position: sticky;
+    top: 0;
+  }
+
   .nav-burger-item {
     right: 0px;
-    top: 13vh;
+    top: 49.5px;
     height: 60vh;
     width: 230px;
     border-radius: 0 0 0 5px;
     transform: translateX(100%);
+    box-shadow: var(--box-shadow-color) -1px 3px 3px;
   }
 
   .nav-items-container {
