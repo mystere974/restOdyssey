@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avis clients</title>
+    <link rel="stylesheet" href="style-avis-clients.css">
+</head>
+<body>
+    <div id="main">
+
+        <!-- Menu -->
+        <div class="menu-bar">
+        </div>
+
+        <!-- Title -->
+        <h1>Avis clients</h1>
+
+        <!-- Container of all clients opinions -->
+        <div class="opinions-container">
+
+        </div>
+
+        <!-- Container with the form -->
+        <div class="add-opinion-container">
+            <fieldset>
+                <form id="add-opinion-form">
+                    <input type="text" id="name" placeholder="Votre nom" />
+                    
+                    <div class="stars-rating-container">
+                        <span class="star" value="1">★</span>
+                        <span class="star" value="2">★</span>
+                        <span class="star" value="3">★</span>
+                        <span class="star" value="4">★</span>
+                        <span class="star" value="5">★</span>
+                    </div>
+                    <!-- Rating input -->
+                    <input type="range" id="rating" min="1" max="5" step="1" required/>
+                    <!-- symbole étoile : ★ -->
+                    <textarea id="message" placeholder="Votre commentaire" required></textarea>
+                    <button id="submit">Envoyer</button>
+                </form>
+            </fieldset>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer-bar">
+        </div>
+
+    </div>
+    <script src="script-avis-clients.js"></script>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
+</html>
