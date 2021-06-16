@@ -8,7 +8,7 @@
 
 :root {
   font-size: 16px;
-  font-family: raleway;
+  font-family: raleway , sans-serif;
   --main-bg-color: #fff;
   --main-text-color: rgb(25, 25, 25);
   --nav-bg-color: #38424e;
@@ -18,40 +18,62 @@
   --subtitle2-color: #F9C9C8;
   --subtitle3-color: #F76C6C;
 }
-#F9C9C8
+
+
+
 h1 {
   color: var(--title-color);
   text-transform: uppercase;
   font-weight: 400;
   font-size: 35px;
-  font-family: montserrat;
+  font-family: montserrat,, sans-serif;
 }
 
 h2 {
   font-size: 19px;
-  color: var();
   font-weight: 500;
-  font-family: raleway;
+  font-family: raleway, sans-serif;
 }
 
 h3 {
   font-size: 24px;
-  font-family: montserrat;
+  font-family: montserrat, sans-serif;
   font-weight: 500;
 }
-
-
 
 
 
 /* NAVBAR */
 
-.nav-container (
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 6vh;
+  width: 100%;
+  background-color: var(--nav-bg-color);
+}
 
-)
+.logo {
+  height: 50px;
+  margin: 10px 20px;
+}
+
+.logo img {
+  width:100%;
+  object-fit: cover;
+}
+
+.nav-items-container {
+  display: flex;
+  min-width: 500px;
+  justify-content: space-around;
+  margin-right: 10px;
+}
 
 .navbar .item a {
   color: var(--nav-text-color);
   text-transform: uppercase;
   text-decoration: none;
+  letter-spacing: 3px;
 }
