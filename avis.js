@@ -5,7 +5,7 @@ const starRating = document.querySelectorAll('.star');
 
 // Push the comment on left or right if the number is even or uneven
 let commentPosition = 1;
-
+let starRatingValue;
 
 //******** Objects
 
@@ -37,10 +37,6 @@ const userComment4 = {
 //******** Array
 
 const commentsList = [userComment1, userComment2, userComment3, userComment4];
-
-
-//******** Page Generation Functions
-
 
 
 //******** User Interaction Functions
@@ -131,11 +127,18 @@ const positionClassComment = (container) => {
 
 //******** Events
 
+//******** Page Generation Functions
+
+for(let i = 0; i < commentsList.length; i++) {
+    createComment(commentsList[i].name, commentsList[i].rating, commentsList[i].comment);
+}
+
 // Click on a star
 starRating.forEach(function(ratingStar) {
     ratingStar.addEventListener('click', () => {
-        console.log(ratingStar.getAttribute('value'));
-        coloringStars(ratingStar.getAttribute('value'));
+        starRatingValue = ratingStar.getAttribute('value');
+        //console.log(starRatingValue);
+        coloringStars(starRatingValue);
     });
 });
 
@@ -144,7 +147,7 @@ document.querySelector('#submit').addEventListener('click', function(e) {
     e.preventDefault();
 
     let nameSubmit = document.querySelector('#name').value;
-    let ratingSubmit = document.querySelector('#rating').value;
+    let ratingSubmit = starRatingValue;
     let messageSubmit = document.querySelector('#message').value;
 
     createComment(nameSubmit, ratingSubmit, messageSubmit);
