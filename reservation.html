@@ -41,58 +41,53 @@
         <!-- Title -->
         <h1>Réservation</h1>
 
+        <h2>Détails</h2>
+
         <!-- Pickup reservation Container -->
         <div id="reservation-global-container">
             <!-- Subtitle -->
-            <h2>Sélectionner une date pour la réservation</h2>
+            <h3>Sélectionner une date pour la réservation</h3>
 
             <div id="pickup-reservation-container">
+                <div class="reservation-input-element">
+                    <label for="reservation-date">Date : </label>
+                    <input type="date" id="reservation-date" />
+                </div>
 
-                <input type="date" id="reservation-date" />
+                <div class="reservation-input-element">
+                    <label for="reservation-time">Créaneau : </label>
+                    <select name="reservation-time" id="reservation-time">
+                        <option value="11h30">11h30</option>
+                        <option value="12h">12h</option>
+                        <option value="12h30">12h30</option>
+                        <option value="13h">13h</option>
+                        <option value="13h30">13h30</option>
+                        <option value="14h">14h</option>
+                        <option value="19h">19h</option>
+                        <option value="19h30">19h30</option>
+                        <option value="20h">20h</option>
+                        <option value="20h30">20h30</option>
+                        <option value="21h">21h</option>
+                        <option value="21h30">21h30</option>
+                    </select>
+                </div>
 
-                <select name="reservation-time" id="reservation-time">
-                    <option value="11h30"></option>
-                    <option value="12h"></option>
-                    <option value="12h30"></option>
-                    <option value="13h"></option>
-                    <option value="13h30"></option>
-                    <option value="14h"></option>
-                    <option value="19h"></option>
-                    <option value="19h30"></option>
-                    <option value="20h"></option>
-                    <option value="20h30"></option>
-                    <option value="21h"></option>
-                    <option value="21h30"></option>
-                </select>
+                <div class="reservation-input-element">
+                    <label for="reservation-number">Nombre : </label>
+                    <input type="number" id="reservation-number" min="1" max="10" />
+                </div>
 
-                <input type="number" id="reservation-number" />
+                <button id="submit" class="reservation-input-element">Réserver</button>
             </div>
 
         </div>
 
-        
+        <!-- Phone reservation -->
+        <div id="reservation-phone-container">
+            <h3>Réserver par téléphone</h3>
+            <a href="tel:03.13.26.33.44" class="phone-number">03.13.26.33.44</a>
 
-        <!-- Container with the form -->
-        <div class="add-opinion-container">
-            <!--<fieldset>-->
-                <form id="add-opinion-form">
-                    <input type="text" id="name" class="submit-element" placeholder="Votre nom" />
-                    
-                    <div class="stars-rating-container submit-element">
-                        <span class="star" value="1">★</span>
-                        <span class="star" value="2">★</span>
-                        <span class="star" value="3">★</span>
-                        <span class="star" value="4">★</span>
-                        <span class="star" value="5">★</span>
-                    </div>
- 
-                    <textarea id="message" class="submit-element" placeholder="Votre commentaire" required></textarea>
-                    <button id="submit" class="submit-element">Envoyer</button>
-                </form>
-            <!-- </fieldset> -->
         </div>
-
-    </div>
 
     <footer>
 
