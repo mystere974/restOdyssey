@@ -1,3 +1,124 @@
-#menu-gallery {
-    background-color: pink;
+/* Phone version */
+@media screen and (max-width: 414px) { 
+
+    h1 {
+        font-size: 1.13em;
+    }
+    
+    h2 {
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-align: center;
+        color: #38424e;
+        font-family: montserrat, sans-serif;
+        padding: 20px 0px 10px 0px;
+
+    }
+
+    h3 {
+        font-size: 10px;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-align: center;
+        color: #F76C6C;
+        font-family: raleway, sans-serif;
+        padding: 0px 0px 25px 0px;
+    }
+
+    h4 {
+        font-size: 10px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        color: #F76C6C;
+        font-family: montserrat, sans-serif;
+        padding: 30px 0px 10px 0px;
+
+    }
+    .gallery {
+        width: 100%;
+    }
+
+    #nav-gallery ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0px 20px;
+
+        height: 55px;
+
+        list-style: none;
+        background-color: #fff;
+    }
+
+    #nav-gallery li a {
+        width: auto;
+
+        font-family: raleway, sans-serif;
+        font-size: 0.750em;
+        font-weight: 500;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #38424e;
+    }
+
+    #nav-gallery li a:hover, a:active {
+        text-decoration: underline;
+        color: #F76C6C;   
+    }
+
+    #gallery {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .gallery-picture {
+        margin: auto;
+        max-width: 280px;
+        height: 280px;
+        background-color: black;
+        margin-top: 40px;
+    }
+
+    .gallery-picture img {
+        width: 100%;
+        height: 100%;
+        
+        background-color: #fff;
+    }
+
+    .course-container {
+        border-bottom: 1px solid grey;
+    }
+
+    #classic-entree {
+        background-image: url(/ressources/phone/classic-entree.jpg);
+    }
+    #classic-main {
+        background-image: url(/ressources/phone/classic-main.jpg);
+    }
+    #classic-dessert {
+        background-image: url(/ressources/phone/classic-dessert.jpg);
+    }
+    #spicy-entree {
+        background-image: url(/ressources/phone/spicy-entree.jpg);
+    }
+    #spicy-main {
+        background-image: url(/ressources/phone/spicy-main.jpg);
+    }
+    #spicy-dessert {
+        background-image: url(/ressources/phone/spicy-dessert.jpg);
+    }
+    #vegan-entree {
+        background-image: url(/ressources/phone/vegan-entree.jpg);
+    }
+    #vegan-main {
+        background-image: url(/ressources/phone/vegan-main.jpg);
+    }
+    #vegan-dessert {
+        background-image: url(/ressources/phone/vegan-dessert.jpg);
+    }
+
 }
