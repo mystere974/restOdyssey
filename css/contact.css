@@ -20,9 +20,9 @@
 body {
   width: 100vw;
   height: 100vh;
-  background: center / cover no-repeat url("./ressources/bgmaincontact.jpg");
-  background-attachment: fixed;
-  background-position-y: -130px;
+  /* background: center / cover no-repeat url("./ressources/contact2.jpg"); */
+  /* background-attachment: fixed;
+  background-position-y: -250px; */
 }
 
 .container {
@@ -42,12 +42,21 @@ body {
 }
 
 .main h1 {
-  color: var(--nav-text-color);
+  color: var(--main-bg-color);
   text-transform: uppercase;
   font-weight: 400;
   font-size: 3vw;
+  font-weight: 500;
   font-family: "Montserrat", sans-serif;
   font-style: italic;
+}
+
+.main img {
+  position: fixed;
+  object-fit: cover;
+  width: 100%;
+  z-index: -1;
+  filter: invert(20%) sepia(50%) contrast(80%) blur(2px);
 }
 
 
@@ -126,6 +135,19 @@ body {
   width: 80%;
 }
 
+.form-items label {
+  font-weight: 500;
+}
+
+.form-items input {
+  height: 30px;
+}
+
+.form-items input, .form-items textarea {
+  border: var(--subtitle2-color) 2px solid;
+  border-radius: 3px;
+}
+
 .form-submit {
   margin: 10px;
   padding: 5px;
@@ -179,9 +201,5 @@ body {
     height: 100%;
     order: -1;
   }
-  /* .adress-item-container {
-    order: 0;
-    background-color: aqua;
-  } */
 }
 

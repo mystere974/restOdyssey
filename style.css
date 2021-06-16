@@ -26,6 +26,7 @@ body{
 
 header {
   box-shadow: var(--box-shadow-color) 0 1px 7px;
+  z-index: 1000;
 }
 
 .main-title {
