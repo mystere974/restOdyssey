@@ -50,6 +50,7 @@ h2, h3 {
     transform: scale(1.2);
     background-color: #F76C6C;
     color: white;
+    box-shadow: 0px 0px 3px black;
 }
 
 .hand-icon {
@@ -60,7 +61,9 @@ h2, h3 {
 /****** Phone reservation */
 
 #reservation-phone-container {
-    margin: 50px auto;
+    margin: 30px auto;
+    padding: 10vh;
+    min-height: 30vh;
 }
 
 .phone-number {
@@ -96,11 +99,21 @@ a {
 }
 
 @media screen and(min-width: 549px) {
+
+    #reservation-global-container {
+        /*display: flex;
+        justify-content: space-around;*/
+    }
+    .reservation-input-element {
+        display: inline-block;
+    }
+
     #phone-global-reservation {
         display: flex;
         justify-content: space-around;
     }
     #reservation-phone-container,#reservation-events-container {
         width: 50%;
+        display: inline-block;
     }
 }
