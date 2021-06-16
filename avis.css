@@ -1,26 +1,8 @@
-/****** RESET */
 
-* {
-    margin: 0;
-    padding: 0;
+h1 {
+    text-align: center;
+    margin: 20px;
 }
-
-
-/******* Main */
-
-#main {
-
-}
-
-
-/****** Menu */
-
-.menu-bar {
-    width: 100%;
-    height: 40px;
-    background-color: black;
-}
-
 /****** Comments */
 
 /*** Containers */
@@ -39,7 +21,7 @@
 /*** Append comment div */
 .unique-comment-container {
     
-    width: 60%;
+    width: 100%;
     position: relative;
     width: 250px;
     background: #F9C9C8;
