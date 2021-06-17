@@ -94,16 +94,15 @@
     color:  rgb(25, 25, 25);
   }
 
-  #footer-style {
+  .footer-style {
     align-content: center;
     padding: 10px;
-    background-color: #38424e;
+    background-color: #6d8097;
     margin: 4px;
     display: block;
-    ont-size: 16px;
+    font-size: 16px;
     font-family: raleway , sans-serif;
-    color:  rgb(25, 25, 25);
-    
+    color:  whitesmoke;
   }
 
   
