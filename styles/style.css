@@ -30,24 +30,27 @@ header {
 }
 
 .main-title {
-  color: var(--title-color);
+  color: var(--main-bg-color);
   text-transform: uppercase;
-  font-weight: 400;
-  font-size: 35px;
-  font-family: montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 7vw;
+  font-style: italic;
+  font-family: "Montserrat", sans-serif;
 }
 
 .sub-title {
-  font-size: 19px;
+  font-size: 4vw;
   font-weight: 500;
-  font-family: raleway, sans-serif;
+  color: var(--subtitle-color);
+  font-family: "Raleway", sans-serif;
 }
 
 .subub-title {
   font-size: 24px;
-  font-family: montserrat, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
 }
+
 
 
 /* NAVBAR */
@@ -272,11 +275,43 @@ header {
 .acceuil-container {
   width: 100vw;
   height: 94vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .acceuil-container img {
   position: fixed;
   width: 100%;
+  height: 100%;
   z-index: -1;
   object-fit: cover;
+  filter: blur(2px) sepia(40%) contrast(110%);
 }
+
+
+.acceuil-title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 50vh;
+}
+
+/* Acceuil links */
+
+.acceuil-link-container {
+  width: 100vw;
+  height: 30vh;
+  display: flex;
+  justify-content: space-around;
+}
+
+.acceuil-link-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
