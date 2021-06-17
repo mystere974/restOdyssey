@@ -3,18 +3,34 @@
     justify-content: space-around;
     }
     
+    .event-h1 {
+      text-align: center;
+      background-image: url(img/cocktails.jpeg);
+      font-family: raleway , sans-serif;
+      height: 20%;
+      
+    }
+
+    .span-event {
+      font-size: 20px;  
+    }
+
     .theme {
-    width: 150px;
-    height: 150px;
-    border: 1px solid black;
+    width: 200px;
+    height: 200px;
     margin-top: 100px;
+    border: 1px solid black;
+    border-radius: 20% solid black;
     }
     
     .style {
         margin-top: 100px;
+        font-family: raleway , sans-serif;
+        color:  rgb(25, 25, 25);
     }
     .img-container {
         text-align: center;
+        font-family: raleway , sans-serif;
     }
     @media screen and (max-width:375px)
     {
@@ -22,7 +38,7 @@
             max-width: 375px;
         }
         .theme {
-            width: 100%;
+            width: 90%;
         }
         .event-container {
             display: flex;
