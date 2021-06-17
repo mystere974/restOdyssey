@@ -75,8 +75,9 @@
   }
 
   .p {
-    line-height: 10px;
-    text-align: center;
+    display: block;
+    line-height: 1.5;
+    text-align: left;
     text-indent: 15px;
     margin: 8px;
     padding: 8px;
