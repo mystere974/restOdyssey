@@ -58,7 +58,7 @@
     height: 400px;
   }
 
-  #title {
+  #title-main {
     display: block;
     text-align: center;
     color: var(--title-color);
