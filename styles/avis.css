@@ -1,0 +1,112 @@
+body {
+    width: 100%;
+    overflow-x: auto;
+}
+
+h1 {
+    background: url('../ressources/avis-img-2.jpg') center/cover;
+    text-align: center;
+    margin: 20px;
+    height: 10vh;
+    line-height: 10vh;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+}
+/****** Comments */
+
+/*** Comments Containers */
+.opinions-container {
+    
+    /*background-color: #f76c6c2a;*/
+    box-shadow: 0px 3px 5px black;
+    width: 100%;
+    margin: 30px 0;
+    padding: 5px;
+    min-height: 100%;
+    overflow: auto;
+}
+
+.stars-rating-container {
+    cursor: pointer;
+}
+
+
+/*** Append comment div */
+.unique-comment-container {
+    
+    width: 60%;
+    position: relative;
+    box-shadow: 0px 0px 3px black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.even {
+    float: right;
+    background: #F9C9C8;
+}
+
+.uneven {
+    float: left;
+    background: #f9c9c880;
+}
+
+
+.unique-comment-rating-black {
+    color: black;
+    text-shadow: none;
+}
+
+.unique-comment-rating-gold {
+    color: gold;
+    text-shadow: 0px 0px 2px black;
+}
+
+.unique-comment-message {
+    color: black;
+    text-shadow: none;
+}
+
+
+/****** Submit form */
+
+.add-opinion-container {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.submit-element {
+    display: block;
+    width: auto;
+    margin: 10px auto;
+    padding: 5px;
+}
+
+#submit {
+    cursor: pointer;
+    background-color: #f9c9c880;
+    border-radius: 5px;
+}
+
+
+@media screen and (min-width: 549px) {
+
+    .unique-comment-container {
+        margin: 25px;
+    }
+    .add-opinion-container {
+        transform: scale(1.5);
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    textarea {
+        resize: both;
+        min-width: 50%;
+        min-height: 20vh;
+        margin: 0 auto;
+    }
+
+}
