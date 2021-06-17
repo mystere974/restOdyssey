@@ -91,12 +91,12 @@ button {
     }
 
 i {
-  padding-right:50px;
+  padding-right:10px;
   padding-left: 20px;
 }
 
 .offres {
   max-width:400px;
   max-height: 200px;
-  padding : 10px;
+  padding : 30px;
 }
