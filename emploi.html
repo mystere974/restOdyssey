@@ -3,27 +3,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>l'Odysée</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/emploi.css">
+    <script defer src="https://friconix.com/cdn/friconix.js"></script>
+    <title>l'Odyssey</title>
 </head>
 <body>
-  <!-- Titre principale page emploi-->
-    <h1>Faites partie de l'équipe !</h1>
-    <!-- Texte de présentation des valeurs de l'équipe-->
-<div id="nos-valeurs"></div>
-<div id="nos-offres"></div>
+    <header class="nav-container">
+        <div class="logo"><img src="" alt="Logo du site"></div>
+        <nav class="navbar">
+            <div class="nav-burger">
+                <div class="burger">
+                    <div class="burger-line1"></div>
+                    <div class="burger-line2"></div>
+                    <div class="burger-line3"></div>
+                </div>
+            </div>
+            <ul class="nav-items container">
+                <li class="item"><a href="">Menu</a></li>
+                <li class="item"><a href="">Reservations</a></li>
+                <li class="item"><a href="">Presentations</a></li>
+                <li class="item"><a href="">Galerie</a></li>
+                <li class="item"><a href="">Evenements</a></li>
+                <li class="item"><a href="">Contact</a></li>
+                <li class="item"><a href="">Livre d'or</a></li>
+                <li class="item"><a href="">Rejoignez nous</a></li>
+            </ul>
+        </nav>
+    </header>
 
+<!-- Titre page emploi-->
 
+<h2>Faites partie de l'équipe !</h2>
+    
+<!-- Présentation des valeurs de l'équipe-->
 
+<div class="flexbox1">
+    <div class="valeurs">
+        <img src="https://images.unsplash.com/photo-1537047902294-62a40c20a6ae?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80">
+    </div>
+    <div class="valeurs">
+        <h3>Nos valeurs</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla earum laudantium mollitia beatae iciendis assumenda facere porro, quisquam aperiam delectus perferendis rem ipsum blanditiis! Accusantium dicta ipsa doloribus culpa, eos temporibus veniam illo praesentium aut sunt ad labore hic architecto nihil eum non quam ea quia adipisci rem, quod aperiam. Quibusdam consequuntur repellat, accusamus et dolor saepe iste similique nesciunt illo vel? Nisi ad dolore sint repellat nam vitae quaerat aut explicabo iure velit dolorum quis, quo eos, animi hic molestias modi harum! Inventore, aliquid? Deleniti, necessit</p>
+    </div>
+    <div class="valeurs">
+        <img src="https://images.unsplash.com/photo-1488992783499-418eb1f62d08?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=853&q=80">
+    </div>
+</div>
 
+<!-- Les offres par domaine -->
+
+<div class="flexbox2">
+    <div class="offres" id="nos-offres">
+        <h3>Nos offres</h3>
+        <select>
+        <option value="votre-domaine">Votre domaine</option>
+        <option value="front-end-salle">Front-end: Service en salle</option>
+        <option value="front-end-bar">Front-end: Service au bar</option>
+        <option value="back-end-cuisine">Back-end: Chef</option>
+        <option value="back-end-commis">Back-end: Commis</option>
+        <option value="full-stack">Full-stack: Gérant</option>
+        </select>
+    </div>
+
+    <div class="offres" id="postulez">
+        <p><i class="fi-ctluxl-smiley-sad-thin"></i>Aucune offre ne vous correspond ?</p> 
+        <p><i class="fi-xtluxl-envelope-text-thin"></i>Postulez pour de futures opportunités !</p>
+    </div>
+
+    <div class="offres" id="btn">
+        <button id="postule-btn">Je postule</button>
+    </div>
+    
 </div>
 
 
-    
-    
-
-
-
-    <script src="style.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
