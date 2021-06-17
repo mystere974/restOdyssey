@@ -26,6 +26,7 @@ body{
 
 header {
   box-shadow: var(--box-shadow-color) 0 1px 7px;
+  z-index:1000;
 }
 
 .main-title {
@@ -51,7 +52,7 @@ header {
 /* text and img */
 
 
-.image-about {
+/* .image-about {
   align-content: center;
   margin: 5px;
   width: 100%;
@@ -75,7 +76,7 @@ header {
   font-size: 16px;
   font-family: raleway , sans-serif;
   color:  rgb(25, 25, 25);
-}
+} */
 
 /* NAVBAR */
 
@@ -89,10 +90,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 6vh;
-  width: 100%;
-  height: 13vh;
-  background-color: var(--subtitle2-color);
+  height: 6vh;
+  width: 100vw;
+  background-color: var(--subtitle3-color);
 }
 
 .logo {
@@ -163,7 +163,7 @@ header {
 
   .nav-burger-item li {
     list-style: none;
-    /* opacity: 0; */
+    opacity: 0;
   }
 
   .nav-burger-item a {
@@ -185,7 +185,7 @@ header {
 
   @media screen and (max-width: 680px) {
     header {
-      position: absolute;
+      position: fixed;
       bottom: 0;
     }
 
@@ -202,7 +202,7 @@ header {
     }
 
     .nav-burger-item {
-      bottom: 12vh;
+      bottom: 6vh;
       height: 40vh;
       width: 45vw;
       border-radius: 5px 0 0 0;
@@ -237,7 +237,7 @@ header {
 
   .nav-burger-item {
     right: 0px;
-    top: 49.5px;
+    top: 6vh;
     height: 60vh;
     width: 230px;
     border-radius: 0 0 0 5px;
