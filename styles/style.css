@@ -285,7 +285,7 @@ header {
   position: fixed;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: -10;
   object-fit: cover;
   filter: blur(2px) sepia(40%) contrast(110%);
 }
@@ -304,14 +304,52 @@ header {
 
 .acceuil-link-container {
   width: 100vw;
-  height: 30vh;
+  height: 44vh;
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  background-color: var(--main-bg-color);
 }
 
-.acceuil-link-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.acceuil-link {
+  width: 25%;
+  height: 75%;
+  border-radius: 3px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+
+.acceuil-link button {
+  margin-bottom: 15px;
+  background-color: var(--main-bg-color);
+  border-radius: 3px;
+  padding: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.acceuil-link a {
+  text-decoration: none;
+  color: var(--subtitle3-color);
+}
+
+.acceuil-menu-img {
+  background-image: url("/ressources/menu.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.acceuil-present-img {
+  background-image: url("/ressources/present.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.acceuil-order-img {
+  background-image: url("/ressources/order.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
