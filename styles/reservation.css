@@ -5,7 +5,7 @@ h1, h2 {
 
 h1 {
     margin: 0px auto;
-    background: url('reservation-img.jpg') center/cover;
+    background: url('../reservation-img.jpg') center/cover;
     height: 30vh;
     line-height: 30vh;
     color: white;
