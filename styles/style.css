@@ -266,3 +266,17 @@ header {
   transform 0.4s 0.4s ease-in-out;
 }
 
+
+/* Acceuil */
+
+.acceuil-container {
+  width: 100vw;
+  height: 94vh;
+}
+
+.acceuil-container img {
+  position: fixed;
+  width: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
