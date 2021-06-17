@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: baseline;
     min-height:100%;
-    background-color: var( --main-bg-color);
+    background-color: var(--main-bg-color);
     ; 
 }
 .menu {
@@ -34,8 +34,8 @@
         }
         .menu-top img{
             grid-area: Photo;
-            width: 100%;
             height: 150px;
+            width: 100%;
         }
         .menu-top h2{
             grid-area: Titre;
@@ -58,9 +58,10 @@
     }
 
     .menu-bottom {
-        display: block;
+        display:block;
         padding: 8px;
         margin: 8px;
+        height: 250px;
         background-color: var(--subtitle2-color);
         border-radius: 8px;
         border: black 1px solid;
@@ -77,34 +78,28 @@
         margin: 8px;
         padding: 4px;
         font-size: larger;
+        font-weight:bolder;
         border-radius: 8px;
         border: black 1px solid;
         box-shadow: 0 2px 20px 0 rgb(0 0 0 / 20%);
-        background-color: yellowgreen;
+        background-color: var(--main-bg-color);
         opacity: 80%;
-        color : darkgreen;
+        color: var(--subtitle3-color);
     }
 
 
 @media screen and (max-width: 500px){
+    /*Mobile*/
     #carte{
         flex-direction: column;
-        /* align-items: center; */
+        margin-bottom:40px;
     }
     .menu {
         max-width: 100%;
-        /* max-height: 95%; */
     }
     .menu-top h2{
         font-size: 22px;
     }
     .menu-bottom {
         display: none;
-
-}
-
-@media screen and (min-width: 501px){
-    .menu-bottom {
-        display: block;
-    }
 }
