@@ -10,7 +10,7 @@
     color:white;
     text-shadow: lightgray 1px 1px;
     font-style: italic;
-    background-color: #F76C6C;
+    background-color:#38424e;
     
   }
   
@@ -36,12 +36,11 @@
   max-height: 530px;
 }
 
-img {
+.flexbox1 img {
   width:100%;
   height:100%;
   border-radius: 15px;
 }
-
 
 .valeurs > p {
   max-width:400px;
