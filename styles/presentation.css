@@ -94,6 +94,17 @@
     color:  rgb(25, 25, 25);
   }
 
+  #footer-style {
+    align-content: center;
+    padding: 10px;
+    background-color: #38424e;
+    margin: 4px;
+    display: block;
+    ont-size: 16px;
+    font-family: raleway , sans-serif;
+    color:  rgb(25, 25, 25);
+    
+  }
 
   
   /* NAVBAR */
