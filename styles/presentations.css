@@ -108,9 +108,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 6vh;
     width: 100%;
-    height: 13vh;
+    height: 6vh;
     background-color: var(--subtitle3-color);
   }
   
@@ -204,7 +203,7 @@
   
     @media screen and (max-width: 680px) {
       header {
-        position: absolute;
+        position: fixed;
         bottom: 0;
       }
   
@@ -221,7 +220,7 @@
       }
   
       .nav-burger-item {
-        bottom: 12vh;
+        bottom: 6vh;
         height: 40vh;
         width: 45vw;
         border-radius: 5px 0 0 0;
@@ -256,7 +255,7 @@
   
     .nav-burger-item {
       right: 0px;
-      top: 49.5px;
+      top: 6vh;
       height: 60vh;
       width: 230px;
       border-radius: 0 0 0 5px;

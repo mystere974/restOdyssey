@@ -1,56 +1,55 @@
 /* GENERAL */
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-:root {
-  font-size: 16px;
-  font-family: raleway , sans-serif;
-  --main-bg-color: #fff;
-  --main-text-color: rgb(50, 50, 50);
-  --nav-bg-color: #38424e;
-  --nav-text-color: #f1f1f1;
-  --title-color: #38424e;
-  --subtitle-color: #8e8e8c;
-  --subtitle2-color: #F9C9C8;
-  --subtitle3-color: #F76C6C;
-  --box-shadow-color: #c0c0c0;
-}
-
-body{
-  overflow-x: hidden;
-}
-
-header {
-  box-shadow: var(--box-shadow-color) 0 1px 7px;
-  z-index: 1000;
-}
-
-.main-title {
-  color: var(--title-color);
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 35px;
-  font-family: montserrat, sans-serif;
-}
-
-.sub-title {
-  font-size: 19px;
-  font-weight: 500;
-  font-family: raleway, sans-serif;
-}
-
-.subub-title {
-  font-size: 24px;
-  font-family: montserrat, sans-serif;
-  font-weight: 500;
-}
-
-
-/* NAVBAR */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    font-size: 16px;
+    font-family: raleway , sans-serif;
+    --main-bg-color: #fff;
+    --main-text-color: rgb(25, 25, 25);
+    --nav-bg-color: #38424e;
+    --nav-text-color: #fff;
+    --title-color: #38424e;
+    --subtitle-color: #8e8e8c;
+    --subtitle2-color: #F9C9C8;
+    --subtitle3-color: #F76C6C;
+  }
+  
+  
+  
+  h1 {
+    color: var(--title-color);
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 35px;
+    font-family: montserrat,, sans-serif;
+  }
+  
+  h2 {
+    font-size: 34px;
+    font-weight: 500;
+    font-family: raleway, sans-serif;
+    padding: 20px;
+    text-align: center;
+    text-shadow: white 2px 2px 2px;
+    background-color: #F76C6C;
+    
+  }
+  
+  h3 {
+    font-size: 24px;
+    font-family: montserrat, sans-serif;
+    font-weight: 500;
+    text-align: center;
+    padding: 20px;
+    font-style: italic;
+  }
+  
+  /* NAVBAR */
 
 .navbar {
   display:flex;
@@ -62,8 +61,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100vw;
-  height: 6vh;
+  min-height: 6vh;
+  width: 100%;
+  height: 13vh;
   background-color: var(--subtitle2-color);
 }
 
@@ -97,7 +97,6 @@ header {
   text-decoration: underline;
 }
 
-
 /* NAV BURGER MENU */
 
 .burger {
@@ -119,7 +118,6 @@ header {
   opacity: 1;
 }
 
-
 /* NAV BURGER MENU ITEM */
 
   .nav-burger-item {
@@ -132,9 +130,10 @@ header {
     transition: transform 0.5s ease-in;
 }
 
+
   .nav-burger-item li {
     list-style: none;
-    opacity: 0;
+    /* opacity: 0; */
   }
 
   .nav-burger-item a {
@@ -150,12 +149,11 @@ header {
     text-decoration: underline;
   }
 
-
   /* NAV RESPONSIVE */
 
   @media screen and (max-width: 680px) {
     header {
-      position: fixed;
+      position: absolute;
       bottom: 0;
     }
 
@@ -172,7 +170,7 @@ header {
     }
 
     .nav-burger-item {
-      bottom: 6vh;
+      bottom: 12vh;
       height: 40vh;
       width: 45vw;
       border-radius: 5px 0 0 0;
@@ -207,7 +205,7 @@ header {
 
   .nav-burger-item {
     right: 0px;
-    top: 6vh;
+    top: 49.5px;
     height: 60vh;
     width: 230px;
     border-radius: 0 0 0 5px;
@@ -223,8 +221,6 @@ header {
     display: none;
   }
 }
-
-
 
 /* Burger Menu Animation */
 
@@ -266,3 +262,86 @@ header {
   transform 0.4s 0.4s ease-in-out;
 }
 
+
+  /*EMPLOI*/
+
+
+.flexbox1 {
+  display:flex;
+  justify-content: space-around;
+  margin: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  }
+
+.valeurs {
+  max-width:450px;
+  max-height: 530px;
+}
+
+img {
+  width:100%;
+  height:100%;
+  border-radius: 15px;
+}
+
+
+.valeurs > p {
+  max-width:400px;
+  max-height: 530px;
+  text-align: justify;
+  margin-bottom: 20px;
+  line-height: 25px;
+  vertical-align: middle;
+  padding-top:20px;
+  }
+
+.flexbox2 {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  flex-direction: row-reverse;
+  }
+
+select {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 10px;
+  background-color:#F76C6C ;
+  color: #fff;
+  border-style:none;
+  border-radius: 10px;
+    }
+
+option {
+  background-color: white;
+  color:black;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 20px;
+  background-color:#F76C6C ;
+  color: #fff;
+  border-style:none;
+  border-radius: 10px;
+    }
+
+i {
+  padding-right:50px;
+  padding-left: 20px;
+}
+
+.offres {
+  max-width:400px;
+  max-height: 200px;
+  padding : 10px;
+}
