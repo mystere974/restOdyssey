@@ -6,7 +6,8 @@ body {
 h1 {
     background: url('../ressources/avis-img-2.jpg') center/cover;
     text-align: center;
-    margin: 20px;
+    width: 100%;
+    margin: 0 20px;
     height: 10vh;
     line-height: 10vh;
     color: white;
