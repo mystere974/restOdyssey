@@ -45,11 +45,13 @@ h1 {
 }
 
 .even {
+    text-align: right;
     float: right;
     background: #F9C9C8;
 }
 
 .uneven {
+    text-align: left;
     float: left;
     background: #f9c9c880;
 }
