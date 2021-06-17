@@ -5,7 +5,7 @@
 .event-container {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     }
     
     .event-h1 {
@@ -53,7 +53,7 @@
         }
 
         .style-event{
-          margin-bottom: 50px;
+          margin-bottom: 70px;
         }
     }
 /* GENERAL */
