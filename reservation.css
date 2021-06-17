@@ -3,6 +3,14 @@ h1, h2 {
     margin: 20px;
 }
 
+h1 {
+    background: url('reservation-img.jpg') center/cover;
+    height: 10vh;
+    line-height: 10vh;
+    color: white;
+    text-shadow: 0px 0px 3px black;
+}
+
 h2 {
     display: none;
 }
@@ -18,7 +26,7 @@ h2 {
 }
 
 #reservation-global-container {
-    background-color: rgba(107, 37, 37, 0.03);
+    background-color: #f9c9c880;
 }
 
 h2, h3 {
@@ -34,6 +42,10 @@ h2, h3 {
 .reservation-input-element > input, .reservation-input-element > select {
     padding: 10px;
     cursor: pointer;
+}
+
+#reservation-number, #reservation-time {
+    min-width: 100px;
 }
 
 .reservation-button {
@@ -91,7 +103,7 @@ a {
 
 #reservation-events-container {
     padding: 20px;
-    background-color: rgba(107, 37, 37, 0.03);
+    background-color: #f9c9c880;
 }
 
 #reservation-events-container > * {
