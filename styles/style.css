@@ -32,16 +32,13 @@ h1 {
 h2 {
   font-size: 19px;
   font-weight: 500;
-  text-transform: uppercase;
-  color: #38424e;
-  font-family: montserrat, sans-serif;
+  font-family: raleway, sans-serif;
 }
 
 h3 {
-  font-size: 24em;
+  font-size: 24px;
+  font-family: montserrat, sans-serif;
   font-weight: 500;
-  text-transform: uppercase;
-  font-family: raleway, sans-serif;
 }
 
 
@@ -88,4 +85,3 @@ h3 {
 .nav-items-container a:hover {
   text-decoration: underline;
 }
-
