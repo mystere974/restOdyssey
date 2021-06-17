@@ -7,7 +7,9 @@
     font-family: raleway, sans-serif;
     padding: 20px;
     text-align: center;
-    text-shadow: white 2px 2px 2px;
+    color:white;
+    text-shadow: lightgray 1px 1px;
+    font-style: italic;
     background-color: #F76C6C;
     
   }
