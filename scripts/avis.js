@@ -11,13 +11,13 @@ let starRatingValue;
 
 const userComment1 = {
     name: 'Bill Gates',
-    comment: 'Really good, I loved the XP98 dessert',
+    comment: 'Really good, I loved the HTML dessert',
     rating: '5'
 }
 
 const userComment2 = {
     name: 'Linus Torvalds',
-    comment: 'Your Linux meal needs a bit more of GNU',
+    comment: 'Your CSS meal needs a bit more of GNU',
     rating: '4'
 }
 
