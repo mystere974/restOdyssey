@@ -1,14 +1,16 @@
 
-  /*EMPLOI*/
 
+  /*EMPLOI*/
   h2 {
     font-size: 34px;
     font-weight: 500;
     font-family: raleway, sans-serif;
     padding: 20px;
     text-align: center;
-    text-shadow: white 2px 2px 2px;
-    background-color: #F76C6C;
+    color:white;
+    text-shadow: lightgray 1px 1px;
+    font-style: italic;
+    background-color:#38424e;
     
   }
   
@@ -34,12 +36,11 @@
   max-height: 530px;
 }
 
-img {
+.flexbox1 img {
   width:100%;
   height:100%;
   border-radius: 15px;
 }
-
 
 .valeurs > p {
   max-width:400px;
@@ -57,15 +58,15 @@ img {
   flex-wrap: wrap;
   justify-content:space-around;
   flex-direction: row-reverse;
+  align-items: center;
   }
 
 select {
   display: block;
   margin: 0 auto;
-  margin-bottom: 20px;
   font-size: 17px;
   font-weight: bold;
-  padding: 10px;
+  padding: 20px;
   background-color:#F76C6C ;
   color: #fff;
   border-style:none;
@@ -80,7 +81,6 @@ option {
 button {
   display: block;
   margin: 0 auto;
-  margin-top: 20px;
   font-size: 17px;
   font-weight: bold;
   padding: 20px;
@@ -91,12 +91,18 @@ button {
     }
 
 i {
-  padding-right:10px;
+  padding-right:50px;
   padding-left: 20px;
 }
 
 .offres {
   max-width:400px;
   max-height: 200px;
-  padding : 30px;
+  margin-bottom : 30px;
+  padding: 30px;
 }
+
+body {
+  position: relative;
+}
+
