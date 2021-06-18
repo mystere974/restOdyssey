@@ -20,11 +20,16 @@ h2 {
 
 /****** Date pickup reservation */
 
-#reservation-global-container, #reservation-phone-container, #reservation-events-container {
+#pickup-reservation-container {
     width: 100%;
+}
+
+#reservation-global-container, #reservation-phone-container, #reservation-events-container {
+    /*width: 100%;*/
     margin: 0px auto;
+    padding: 15px;
     text-align: center;
-    overflow-x: auto; 
+    /* overflow-x: auto;  */
 }
 
 #reservation-global-container {
