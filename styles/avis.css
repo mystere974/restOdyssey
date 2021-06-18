@@ -95,6 +95,10 @@ h1 {
     border-radius: 5px;
 }
 
+footer {
+    margin-bottom: -100vh;
+}
+
 
 @media screen and (min-width: 549px) {
 
@@ -121,9 +125,8 @@ h1 {
         margin: 0 auto;
     }
 
-}
+    footer {
+        display: none;
+    }
 
-
-footer {
-    margin-bottom: -100vh;
 }

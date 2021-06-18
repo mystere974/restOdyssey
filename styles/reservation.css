@@ -112,6 +112,10 @@ a {
     margin: 15px auto;
 }
 
+footer {
+    margin-bottom: -100vh;
+}
+
 @media screen and(min-width: 549px) {
 
     h1 {
@@ -137,8 +141,8 @@ a {
         width: 50%;
         display: inline-block;
     }
-}
 
-footer {
-    margin-bottom: -100vh;
+    footer {
+        display: none;
+    }
 }
