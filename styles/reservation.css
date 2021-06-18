@@ -5,7 +5,7 @@ h1, h2 {
 
 h1 {
     margin: 0px auto;
-    background: url('../reservation-img.jpg') center/cover;
+    background: url('../ressources/reservation-img.jpg') center/cover;
     height: 30vh;
     line-height: 30vh;
     color: white;
@@ -112,6 +112,10 @@ a {
     margin: 15px auto;
 }
 
+footer {
+    margin-bottom: -100vh;
+}
+
 @media screen and(min-width: 549px) {
 
     h1 {
@@ -136,5 +140,9 @@ a {
     #reservation-phone-container,#reservation-events-container {
         width: 50%;
         display: inline-block;
+    }
+
+    footer {
+        display: none;
     }
 }
