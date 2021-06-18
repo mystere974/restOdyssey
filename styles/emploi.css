@@ -1,0 +1,108 @@
+
+
+  /*EMPLOI*/
+  h2 {
+    font-size: 34px;
+    font-weight: 500;
+    font-family: raleway, sans-serif;
+    padding: 20px;
+    text-align: center;
+    color:white;
+    text-shadow: lightgray 1px 1px;
+    font-style: italic;
+    background-color:#38424e;
+    
+  }
+  
+  h3 {
+    font-size: 24px;
+    font-family: montserrat, sans-serif;
+    font-weight: 500;
+    text-align: center;
+    padding: 20px;
+    font-style: italic;
+  }
+
+.flexbox1 {
+  display:flex;
+  justify-content: space-around;
+  margin: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  }
+
+.valeurs {
+  max-width:450px;
+  max-height: 530px;
+}
+
+.flexbox1 img {
+  width:100%;
+  height:100%;
+  border-radius: 15px;
+}
+
+.valeurs > p {
+  max-width:400px;
+  max-height: 530px;
+  text-align: justify;
+  margin-bottom: 20px;
+  line-height: 25px;
+  vertical-align: middle;
+  padding-top:20px;
+  }
+
+.flexbox2 {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  flex-direction: row-reverse;
+  align-items: center;
+  }
+
+select {
+  display: block;
+  margin: 0 auto;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 20px;
+  background-color:#F76C6C ;
+  color: #fff;
+  border-style:none;
+  border-radius: 10px;
+    }
+
+option {
+  background-color: white;
+  color:black;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 20px;
+  background-color:#F76C6C ;
+  color: #fff;
+  border-style:none;
+  border-radius: 10px;
+    }
+
+i {
+  padding-right:50px;
+  padding-left: 20px;
+}
+
+.offres {
+  max-width:400px;
+  max-height: 200px;
+  margin-bottom : 30px;
+  padding: 30px;
+}
+
+body {
+  position: relative;
+}
+
