@@ -99,10 +99,11 @@
     padding: 10px;
     background-color: #6d8097;
     margin: 4px;
-    display: block;
+    display: none;
     font-size: 16px;
     font-family: raleway , sans-serif;
     color:  whitesmoke;
+    position: relative;
   }
 
   
