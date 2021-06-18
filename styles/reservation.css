@@ -5,7 +5,7 @@ h1, h2 {
 
 h1 {
     margin: 0px auto;
-    background: url('../reservation-img.jpg') center/cover;
+    background: url('../ressources/reservation-img.jpg') center/cover;
     height: 30vh;
     line-height: 30vh;
     color: white;
@@ -137,4 +137,8 @@ a {
         width: 50%;
         display: inline-block;
     }
+}
+
+footer {
+    margin-bottom: -100vh;
 }
