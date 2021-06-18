@@ -96,11 +96,11 @@ h1 {
     background-color: #f9c9c880;
     border-radius: 5px;
 }
-
+/*
 footer {
-    margin-bottom: -100vh;
+    display: none;
 }
-
+*/
 
 @media screen and (min-width: 549px) {
 
@@ -127,8 +127,14 @@ footer {
         margin: 0 auto;
     }
 
+   /* footer {
+        margin-bottom: -100vh;
+        position: absolute;
+        text-align: center;
+        display: block;
+    }*/
     footer {
-        display: none;
+        margin-bottom: -100vh;
     }
 
 }
