@@ -1,5 +1,9 @@
 .event-body {
-  width: 100%;
+  font-size: 125%;
+    font-weight: 700;
+    text-align: center;
+    color: #8e8e8c;
+    font-family: montserrat, sans-serif;
 }
 
 .event-container {
@@ -11,7 +15,7 @@
     .event-h1 {
       text-align: center;
       background: url("../ressources/cocktails.jpg") center/cover;
-      font-family: raleway , sans-serif;
+      font-family: montserrat, sans-serif;
       height: 30vh;
       width: 100%;
       line-height: 30vh;
@@ -29,6 +33,12 @@
     margin-top: 100px;
     }
     
+.event-div { 
+  width: 100%;
+  font-weight: normal;
+  margin: 0px auto;
+}
+
     .style {
         margin-top: 100px;
         font-family: raleway , sans-serif;
@@ -107,7 +117,9 @@ footer p a {
 margin: auto;
 color: #fff;
 }
-
+footer {
+  position: relative;
+}
 .main-title {
   color: var(--main-bg-color);
   text-transform: uppercase;
