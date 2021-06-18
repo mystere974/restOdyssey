@@ -114,7 +114,7 @@ color: #fff;
   list-style: none;
 }
 
-.nav-items-container a:hover {
+.nav-items-container a:hover, a:active {
   text-decoration: underline;
 }
 
@@ -139,7 +139,6 @@ color: #fff;
   transform: translateX(0%) !important;
   opacity: 1;
 }
-
 
 /* NAV BURGER MENU ITEM */
 
@@ -167,7 +166,7 @@ color: #fff;
   .nav-burger-item li {
     list-style: none;
   }
-  .nav-burger-item a:hover {
+  .nav-burger-item a:hover, a:active {
     text-decoration: underline;
   }
 
