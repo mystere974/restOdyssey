@@ -2,6 +2,7 @@
 
 document.querySelector(".burger").addEventListener('click', () =>{
 
+  const burger = document.querySelector('.burger');
   const nav = document.querySelector('.nav-burger-item');
   const navLinks = document.querySelectorAll('.nav-burger-item li');
 
