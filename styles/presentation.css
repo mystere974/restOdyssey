@@ -223,7 +223,7 @@
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
-      background-color: var(--subtitle3-color);
+      background-color: var(--subtitle2-color);
       transition: transform 0.5s ease-in;
   }
   
