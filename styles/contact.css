@@ -142,19 +142,19 @@ body {
 }
 
 .form-items input, .form-items textarea {
-  border: var(--subtitle2-color) 2px solid;
+  border: var(--subtitle3-color) 2px solid;
   border-radius: 3px;
   padding: 15px;
   font-family: montserrat, sans-serif;
 }
 
 .form-submit {
-  margin: 10px;
+  margin: 5px 0 15px 0;
   padding: 5px;
   border: none;
   border-radius: 5px;
   box-shadow: var(--subtitle2-color);
-  background-color: var(--subtitle2-color);
+  background-color: var(--subtitle3-color);
   color: var(--main-bg-color);
   font-size: 1rem;
   font-weight: 500;
@@ -188,11 +188,12 @@ footer {
 
   .adress-container {
     height: 100%;
-    background-color: var(--subtitle2-color);
+    background-color: var(--subtitle3-color);
   }
 
   .adress-container a, .adress-container p {
-    font-size: 15px
+    font-size: 18px;
+    font-weight: 500;
   }
 
 
