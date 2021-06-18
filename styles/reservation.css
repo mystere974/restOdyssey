@@ -111,6 +111,7 @@ a {
 #reservation-events-container {
     padding: 20px;
     background-color: #f9c9c880;
+    margin-bottom: 50px;
 }
 
 #reservation-events-container > * {
