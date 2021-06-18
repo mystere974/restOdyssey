@@ -22,12 +22,37 @@
   
   body{
     overflow-x: hidden; 
+    position: relative;
   }
   
   header {
     box-shadow: var(--box-shadow-color) 0 1px 7px;
   }
   
+
+  footer {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+    background-color: #38424e;
+  }
+  
+  footer p {
+  margin: auto;
+  font-size: 10px;
+  color: #fff;
+  }
+  
+  footer p a {
+  margin: auto;
+  color: #fff;
+  }
+
+
   .main-title {
     color: var(--title-color);
     text-transform: uppercase;
@@ -94,16 +119,7 @@
     color:  rgb(25, 25, 25);
   }
 
-  .footer-style {
-    text-align: center;
-    padding: 10px;
-    background-color: #6d8097;
-    margin: 4px;
-    display: block;
-    font-size: 16px;
-    font-family: raleway , sans-serif;
-    color:  whitesmoke;
-  }
+  
 
   
   /* NAVBAR */
@@ -184,7 +200,7 @@
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
-      background-color: var(--subtitle3-color);
+      background-color: var(--subtitle2-color);
       transition: transform 0.5s ease-in;
   }
   

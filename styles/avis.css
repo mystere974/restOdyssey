@@ -1,6 +1,5 @@
 body {
     width: 100%;
-    overflow-x: auto;
 }
 
 h1 {
@@ -14,6 +13,8 @@ h1 {
     text-shadow: 2px 2px 3px black;
     font-size: 2rem;
 }
+
+
 /****** Comments */
 
 /*** Comments Containers */
@@ -80,6 +81,7 @@ h1 {
     width: 100%;
     margin: 0 auto;
     margin-top: 0px;
+    margin-bottom: 60px;
 }
 
 .submit-element {
@@ -94,11 +96,11 @@ h1 {
     background-color: #f9c9c880;
     border-radius: 5px;
 }
-
+/*
 footer {
-    margin-bottom: -100vh;
+    display: none;
 }
-
+*/
 
 @media screen and (min-width: 549px) {
 
@@ -125,8 +127,14 @@ footer {
         margin: 0 auto;
     }
 
+   /* footer {
+        margin-bottom: -100vh;
+        position: absolute;
+        text-align: center;
+        display: block;
+    }*/
     footer {
-        display: none;
+        margin-bottom: -100vh;
     }
 
 }
