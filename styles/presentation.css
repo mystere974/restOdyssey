@@ -28,29 +28,6 @@
   header {
     box-shadow: var(--box-shadow-color) 0 1px 7px;
   }
-
-  footer {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 50px;
-    margin-top: 30px;
-    background-color: #38424e;
-  }
-  
-  footer p {
-  margin: auto;
-  font-size: 10px;
-  color: #fff;
-  }
-  
-  footer p a {
-  margin: auto;
-  color: #fff;
-  }
-  
   
 
   footer {
