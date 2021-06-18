@@ -1,10 +1,11 @@
 // Drop-down (show/hide) menu
 function youSeeMe(menu) {
-    let menuVisible = document.querySelector(`#bottom${menu}`)
-  
-      if (menuVisible.style.display === "block") {
-        menuVisible.style.display = "none";
-      } else {
-        menuVisible.style.display = "block";
-      }
+  let menuVisible = document.querySelector(`#bottom${menu}`)
+
+    if (!menuVisible.style.display || menuVisible.style.display == "none") {
+      menuVisible.style.display = "block";
     }
+    else {
+    menuVisible.style.display = "none";
+    }
+} 
