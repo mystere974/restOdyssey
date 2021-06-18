@@ -156,7 +156,6 @@ color: #fff;
 
   .nav-burger-item li {
     list-style: none;
-    opacity: 0;
   }
 
   .nav-burger-item a {
@@ -293,7 +292,7 @@ color: #fff;
 
   .nav-active {
     transform: translateX(65%) !important;
-    opacity: 1;
+    /* opacity: 1; */
   }
 
   .navbar .desktop {
@@ -331,6 +330,10 @@ header {
   border-radius: 0 0 0 5px;
   transform: translateX(100%);
   box-shadow: var(--box-shadow-color) -1px 3px 3px;
+}
+
+.nav-burger-item li {
+  opacity: 0;
 }
 
 .nav-items-container {
