@@ -172,127 +172,6 @@ color: #fff;
     text-decoration: underline;
   }
 
-
-  /* NAV RESPONSIVE */
-
-  @media screen and (max-width: 680px) {
-    header {
-      position: fixed;
-      bottom: 0;
-    }
-
-    .logo {
-      display:none;
-    }
-
-    .navbar {
-      width: 100%;
-    }
-
-    .nav-items-container {
-      width: 80%;
-    }
-
-    .nav-burger-item {
-      bottom: 6vh;
-      height: 40vh;
-      width: 45vw;
-      border-radius: 5px 0 0 0;
-      transform: translateX(200%);
-      box-shadow: var(--box-shadow-color) -1px -3px 3px;
-    }
-
-    .nav-burger-item a {
-      font-size:75%
-    }
-
-    .nav-active {
-      transform: translateX(65%) !important;
-      opacity: 1;
-    }
-
-    .nav-items-container a {
-      font-size: 75%
-    }
-
-    .navbar .desktop {
-      display: none;
-    }
-
-    footer {
-      display: none;
-    }
-  }
-
-@media screen and (min-width:681px) {
-
-  header {
-    position: sticky;
-    top: 0;
-  }
-
-  .nav-burger-item {
-    right: 0px;
-    top: 6vh;
-    height: 60vh;
-    width: 230px;
-    border-radius: 0 0 0 5px;
-    transform: translateX(100%);
-    box-shadow: var(--box-shadow-color) -1px 3px 3px;
-  }
-
-  .nav-items-container {
-    min-width: 500px;
-  }
-
-  .navbar .mobile {
-    display: none;
-  }
-}
-
-
-
-/* Burger Menu Animation */
-
-@keyframes navLinkFade {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-}
-
-.burger .burger-line1, .burger-line3{
-  transform: rotate(0deg);
-  transition:
-  transform 0.4s ease-in-out,
-  top 0.4s 0.4s ease-in-out;
-}
-
-.burger-line2 {
-  transition: opacity 0.4s 0.4s ease-in-out;
-}
-
-.toggle .burger-line1 {
-  transform: rotate(45deg) translate(5px, 6px);
-  transition:
-  top 0.4s ease-in-out,
-  transform 0.4s 0.4s ease-in-out;
-}
-.toggle .burger-line2 {
-  opacity: 0;
-}
-.toggle .burger-line3 {
-  transform: rotate(-45deg) translate(5px, -6px);
-  transition:
-  top 0.4s ease-in-out,
-  transform 0.4s 0.4s ease-in-out;
-}
-
-
 /* Accueil */
 
 .accueil-container {
@@ -327,7 +206,6 @@ color: #fff;
 
 .accueil-link-container {
   width: 100vw;
-  height: 44vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -376,3 +254,137 @@ color: #fff;
   background-size: cover;
 }
 
+/* RESPONSIVE */
+
+@media screen and (max-width: 680px) {
+  header {
+    position: fixed;
+    bottom: 0;
+  }
+
+  .logo {
+    display:none;
+  }
+
+  .navbar {
+    width: 100%;
+  }
+
+  .nav-items-container {
+    width: 80%;
+  }
+
+  .nav-items-container a {
+    font-size: 75%
+  }
+
+  .nav-burger-item {
+    bottom: 6vh;
+    height: 40vh;
+    width: 45vw;
+    border-radius: 5px 0 0 0;
+    transform: translateX(200%);
+    box-shadow: var(--box-shadow-color) -1px -3px 3px;
+  }
+
+  .nav-burger-item a {
+    font-size:75%
+  }
+
+  .nav-active {
+    transform: translateX(65%) !important;
+    opacity: 1;
+  }
+
+  .navbar .desktop {
+    display: none;
+  }
+
+  .accueil-link-container {
+    flex-direction: column;
+  }
+
+  .accueil-link {
+    width: 60%;
+    height: 18vh;
+    margin: 10px 0;
+  }
+
+
+  footer {
+    display: none;
+  }
+}
+
+@media screen and (min-width:681px) {
+
+header {
+  position: sticky;
+  top: 0;
+}
+
+.nav-burger-item {
+  right: 0px;
+  top: 6vh;
+  height: 60vh;
+  width: 230px;
+  border-radius: 0 0 0 5px;
+  transform: translateX(100%);
+  box-shadow: var(--box-shadow-color) -1px 3px 3px;
+}
+
+.nav-items-container {
+  min-width: 500px;
+}
+
+.navbar .mobile {
+  display: none;
+}
+
+.accueil-link-container {
+  width: 100vw;
+  height: 44vh;
+  margin-bottom: 49px;
+}
+
+
+
+/* Burger Menu Animation */
+
+@keyframes navLinkFade {
+from {
+  opacity: 0;
+  transform: translateX(50px);
+}
+to {
+  opacity: 1;
+  transform: translateX(0px);
+}
+}
+
+.burger .burger-line1, .burger-line3{
+transform: rotate(0deg);
+transition:
+transform 0.4s ease-in-out,
+top 0.4s 0.4s ease-in-out;
+}
+
+.burger-line2 {
+transition: opacity 0.4s 0.4s ease-in-out;
+}
+
+.toggle .burger-line1 {
+transform: rotate(45deg) translate(5px, 6px);
+transition:
+top 0.4s ease-in-out,
+transform 0.4s 0.4s ease-in-out;
+}
+.toggle .burger-line2 {
+opacity: 0;
+}
+.toggle .burger-line3 {
+transform: rotate(-45deg) translate(5px, -6px);
+transition:
+top 0.4s ease-in-out,
+transform 0.4s 0.4s ease-in-out;
+}
