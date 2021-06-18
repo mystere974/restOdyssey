@@ -19,7 +19,7 @@
 
 body {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
 }
 
 .container {
@@ -51,7 +51,7 @@ body {
 .main img {
   position: fixed;
   object-fit: cover;
-  width: 100%;
+  width: 100vw;
   z-index: -1;
   filter: invert(20%) sepia(50%) contrast(80%) blur(2px);
 }
@@ -158,7 +158,7 @@ body {
   color: var(--main-bg-color);
   font-size: 1rem;
   font-weight: 500;
-  width: 65px;
+  width: 70px;
   align-self: stretch;
   margin-left: 10%;
 }
