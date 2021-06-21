@@ -2,6 +2,8 @@
 
 const opinionsContainer = document.querySelector('.opinions-container');
 const starRating = document.querySelectorAll('.star');
+const meanRating = document.querySelector('.opinions-rated');
+
 
 // Push the comment on left or right if the number is even or uneven
 let commentPosition = 1;
@@ -37,6 +39,23 @@ const userComment4 = {
 //******** Array
 
 const commentsList = [userComment1, userComment2, userComment3, userComment4];
+const userRatings = [];
+
+//******** Function to add the mean of the opinions
+const ratingAdd = (rate, array) => {
+    array.push(parseInt(rate));
+}
+
+const ratingMean = (array) => {
+    let arrayEntries = array.length;
+    console.log(arrayEntries);
+    let sum = array.reduce((total, rate) => total + rate);
+    return sum / arrayEntries;
+}
+
+const addRatingMeanDiv = (mean) => {
+    meanRating.innerHTML = mean;
+}
 
 
 //******** User Interaction Functions
@@ -129,9 +148,14 @@ const positionClassComment = (container) => {
 
 //******** Page Generation Functions
 
+// Create all the elements, add the info and add the rating in the array
 for(let i = 0; i < commentsList.length; i++) {
     createComment(commentsList[i].name, commentsList[i].rating, commentsList[i].comment);
+    ratingAdd(commentsList[i].rating, userRatings);   
 }
+
+// Calc the mean and add it to the div
+addRatingMeanDiv(ratingMean(userRatings));
 
 // Click on a star
 starRating.forEach(function(ratingStar) {
