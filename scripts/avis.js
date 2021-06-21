@@ -50,11 +50,11 @@ const ratingMean = (array) => {
     let arrayEntries = array.length;
     console.log(arrayEntries);
     let sum = array.reduce((total, rate) => total + rate);
-    return sum / arrayEntries;
+    return Math.round((sum / arrayEntries) * 100) / 100;
 }
 
 const addRatingMeanDiv = (mean) => {
-    meanRating.innerHTML = mean;
+    meanRating.innerHTML = `<span class="rating-gold">★</span> ${mean}`;
 }
 
 
@@ -176,6 +176,9 @@ document.querySelector('#submit').addEventListener('click', function(e) {
 
     createComment(nameSubmit, ratingSubmit, messageSubmit);
 
+    ratingAdd(ratingSubmit, userRatings);
+    // Calc the mean and add it to the div
+    addRatingMeanDiv(ratingMean(userRatings));
 });
 
 
