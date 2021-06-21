@@ -109,7 +109,7 @@ const createComment = (name, rating, message) => {
 // Function to add classes to the comment elements
 const addClassComment = (container, name, rating, message) => {
     container.classList.add('unique-comment-container');
-    name.classList.add('test');
+    name.classList.add('unique-comment-name');
     rating.classList.add('unique-comment-rating-gold');
     message.classList.add('unique-comment-message');
 }
