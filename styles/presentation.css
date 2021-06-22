@@ -75,27 +75,6 @@
   
   /* text and img */
 
-
-  .image-text {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    
-  }
-
-  #image-resto {
-    width: 50%;
-  }
-
-
-  #image-platter {
-    width: 50%;
-  }
-
-  #image-kitchen {
-    width: 50%;
-  }
-
   #title-main {
     display: block;
     text-align: center;
@@ -104,7 +83,17 @@
     font-family: montserrat, sans-serif;
     font-weight: 500;
     padding: 20px;
-  
+  }
+
+
+  .image-text {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .image-resto {
+    width: 50%;
   }
 
   .small-titles {
@@ -123,18 +112,16 @@
   }
 
   .parag {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     line-height: 1.5;
     text-indent: 15px;
     margin: 10px;
     font-size: 16px;
     font-family: raleway , sans-serif;
     color:  rgb(25, 25, 25);
-    width: 400px;
+    width: 500px;
     height: auto;
     border: 2px solid #F9C9C8;
+    border-radius: 5px;
     padding: 10px
   }
 
