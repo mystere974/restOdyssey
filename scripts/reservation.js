@@ -18,14 +18,23 @@ const confirmationGeneration = (dateConfirm, timeConfirm, numberConfirm) => {
 
     resetConfirmation();
 
+    // Get the current date and formate it
     let now = new Date();
     let currentDay = now.getDate();
-    let currentMonth = now.getMonth();
+    let currentMonth = now.getMonth() + 1;
     let currentYear = now.getFullYear();
+
+    if(currentMonth < 10) {
+        currentMonth = `0${currentMonth}`;
+    }
+
+    if(currentDay < 10) {
+        currentDay = `0${currentDay}`;
+    }
+
     let currentDate = `${currentYear}-${currentMonth}-${currentDay}`;
 
-    console.log(`Current date : ${currentDate}`);
-    console.log(`Picked up date : ${dateConfirm}`);
+    // Test if the picked up date is not outdated
 
     if((dateConfirm) && (timeConfirm) && (numberConfirm)) {
         if(dateConfirm < currentDate) {
@@ -39,6 +48,8 @@ const confirmationGeneration = (dateConfirm, timeConfirm, numberConfirm) => {
         confirmationDiv.classList.add('confirmation-show-error');
         confirmationDiv.innerHTML = `Une erreur s'est produite lors de la réservation`;
     }
+
+    // Effect to hide the confirmation div
 
     setInterval(() => {
         resetConfirmation();
