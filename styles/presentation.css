@@ -76,11 +76,24 @@
   /* text and img */
 
 
-  .image-about {
+  .image-text {
     display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 400px;
+    justify-content: space-around;
+    align-items: center;
+    
+  }
+
+  #image-resto {
+    width: 50%;
+  }
+
+
+  #image-platter {
+    width: 50%;
+  }
+
+  #image-kitchen {
+    width: 50%;
   }
 
   #title-main {
@@ -100,8 +113,8 @@
     color: var(--title-color);
     font-size: 24px;
     font-family: montserrat, sans-serif;
-    font-weight: 500;
     padding: 20px;
+    margin: 10px;
   }
 
   .space {
@@ -111,15 +124,21 @@
 
   .parag {
     display: flex;
-    justify-content: center space-around;
+    justify-content: space-around;
+    align-items: center;
     line-height: 1.5;
     text-indent: 15px;
-    margin: 1%;
+    margin: 10px;
     font-size: 16px;
     font-family: raleway , sans-serif;
     color:  rgb(25, 25, 25);
+    width: 400px;
+    height: auto;
+    border: 2px solid #F9C9C8;
+    padding: 10px
   }
 
+  
   /* animations texte presentation */
 
  .parag:hover {
@@ -128,6 +147,10 @@
   padding: 10px;
   border-radius: 12px;
  }
+
+
+
+
   
   /* NAVBAR */
   
