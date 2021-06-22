@@ -13,10 +13,17 @@ h1 {
     font-size: 2rem;
 }
 
-h2 {
-    display: none;
-}
 
+/****** Confirmation container */
+
+#confirmation-container {
+    width: 100%;
+    height: 10vh;
+    margin: 0 auto;
+    background-color: rgb(47, 255, 75);
+    display: none;
+    transition: 0.2s;
+}
 
 /****** Date pickup reservation */
 
