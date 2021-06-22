@@ -63,12 +63,14 @@ const addRatingMeanDiv = (mean) => {
 // Function to add color to the selected stars
 const coloringStars = (starNumber) => {
 
+   
+
     for(let i = 0; i < parseInt(starNumber); i++) {
       /*  if(starRating[i].className === "unique-comment-rating") {
             starRating[i].classList.remove('unique-comment-rating');
         }
     */
-        //starRating[i].classList.toggle('unique-comment-rating');
+        //starRating.classList.add('unique-comment-rating-black');
         starRating[i].classList.toggle('unique-comment-rating-black');
         starRating[i].classList.toggle('unique-comment-rating-gold');
      
