@@ -23,6 +23,11 @@
     font-style: italic;
   }
 
+  h4 {
+    text-align: center;
+    font-family: raleway, sans-serif;
+  }
+
 .flexbox1 {
   display:flex;
   justify-content: space-around;
@@ -37,7 +42,7 @@
 }
 
 .flexbox1 img {
-  width:100%;
+  width:27vw;
   height:100%;
   border-radius: 15px;
 }
@@ -66,11 +71,12 @@ select {
   margin: 0 auto;
   font-size: 17px;
   font-weight: bold;
-  padding: 20px;
+  padding: 15px;
   background-color:#F76C6C ;
   color: #fff;
   border-style:none;
   border-radius: 10px;
+  cursor: pointer;
     }
 
 option {
@@ -83,12 +89,19 @@ button {
   margin: 0 auto;
   font-size: 17px;
   font-weight: bold;
-  padding: 20px;
+  padding: 15px;
   background-color:#F76C6C ;
   color: #fff;
   border-style:none;
   border-radius: 10px;
+  width: 120px;
+  height: 50px;
+  cursor: pointer;
     }
+
+button:hover {
+  color: #38424e;
+}
 
 i {
   padding-right:10px;
@@ -106,3 +119,51 @@ body {
   position: relative;
 }
 
+/* MODAL */
+
+.modal-bg {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.bg-active {
+  visibility: visible;
+  opacity: 1; 
+}
+
+.modal {
+  background-color: white;
+  width: 30%;
+  height: 80%;
+  display: flex;
+  justify-content: center; 
+  align-items: space-around;
+  flex-direction: column;
+  padding: 20px;
+  position: relative;
+}
+
+input, label {
+  padding: 8px;
+}
+
+.send-btn {
+  margin-top: 8px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
