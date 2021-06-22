@@ -74,7 +74,6 @@
   }
   
   /* text and img */
-
   
   .image-about {
     display: flex;
@@ -109,7 +108,7 @@
     margin: 15px;
   }
 
-  .article {
+  .parag {
     display: block;
     line-height: 1.5;
     text-indent: 15px;
@@ -119,7 +118,13 @@
     color:  rgb(25, 25, 25);
   }
 
-  
+  /* animations texte presentation */
+
+ .parag:hover {
+  background-color: #F9C9C8;
+  font-size: 20px;
+  border-radius: 12px;
+ }
 
   
   /* NAVBAR */
