@@ -54,7 +54,7 @@ const ratingMean = (array) => {
 }
 
 const addRatingMeanDiv = (mean) => {
-    meanRating.innerHTML = `<span class="rating-gold">★</span> ${mean}`;
+    meanRating.innerHTML = `Note moyenne : ${mean} <span class="rating-gold">★</span>`;
 }
 
 
