@@ -160,6 +160,15 @@ body {
   width: 70px;
   align-self: stretch;
   margin-left: 10%;
+  cursor: pointer;
+  transition: all 0.25s ease-out;
+  border: 1px solid var(--subtitle3-color);
+}
+
+.form-submit:active {
+  background-color: var(--main-bg-color);
+  color: var(--subtitle3-color);
+  border: 1px solid var(--subtitle3-color);
 }
 
 footer {
