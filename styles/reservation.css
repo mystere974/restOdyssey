@@ -15,7 +15,9 @@ h1 {
 
 
 /****** Confirmation container */
-
+#confirmation-container {
+    transition: 1s; 
+}
 .confirmation-container {
     width: 100%;
     opacity: 0;
@@ -30,7 +32,7 @@ h1 {
     opacity: 1;
     min-height: 10vh;
     line-height: 10vh;
-  /*  transition: 0.4s;  */
+     
 }
 
 .confirmation-show-success {
