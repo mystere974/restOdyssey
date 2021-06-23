@@ -168,3 +168,13 @@ input, label {
   font-weight: bold;
   cursor: pointer;
 }
+
+@media screen and (max-width: 700px) {
+  .flexbox1 img {
+    width: 90vw;
+  }
+
+  .modal {
+    width: 100%;
+  }
+}
