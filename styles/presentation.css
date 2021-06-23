@@ -216,6 +216,9 @@
     text-decoration: underline;
   }
   
+  .nav-active-color {
+    filter: invert(55%);
+  }
   
   /* NAV BURGER MENU */
   
