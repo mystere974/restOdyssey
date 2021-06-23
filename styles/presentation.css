@@ -109,11 +109,8 @@
   width: 50%;
   height: auto;
   margin-right: 10px;
-  border-radius: 15px;
   }
 
-
-  
 
 .small-titles {
   display: block;
@@ -159,11 +156,12 @@
   }
 
   .imageResto {
-    max-width: 680px;
+    max-width: 80%;
+    margin-right: 20px;
   }
 
   .parag {
-    max-width: 680px;
+    max-width: 80%;
     margin-bottom: 30px;
   }
 
