@@ -75,72 +75,89 @@
   
   /* text and img */
 
-  #title-main {
-    display: block;
-    text-align: center;
-    color: var(--title-color);
-    font-size: 30px;
-    font-family: montserrat, sans-serif;
-    font-weight: 500;
-    padding: 20px;
+#title-main {
+  display: block;
+  text-align: center;
+  color: var(--title-color);
+  font-size: 30px;
+  font-family: montserrat, sans-serif;
+  font-weight: 500;
+  padding: 20px;
   }
 
 
-  .image-text {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
+.image-text {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
   .imageResto {
     width: 50%;
-    border-radius: 10%;
     margin-right: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
   }
   
 
-  .small-titles {
-    display: block;
-    text-align: center;
-    color: var(--title-color);
-    font-size: 24px;
-    font-family: montserrat, sans-serif;
-    padding: 20px;
-    margin: 10px;
-  }
+.small-titles {
+  display: block;
+  text-align: center;
+  color: var(--title-color);
+  font-size: 24px;
+  font-family: montserrat, sans-serif;
+  padding: 20px;
+  margin: 10px;
+}
 
-  .space {
-    padding: 15px;
-    margin: 15px;
-  }
+.space {
+  padding: 15px;
+  margin: 15px;
+}
 
-  .parag {
-    line-height: 1.5;
-    text-indent: 15px;
-    margin: 10px;
-    font-size: 16px;
-    font-family: raleway , sans-serif;
-    color:  rgb(25, 25, 25);
-    width: 500px;
-    height: auto;
-    border: 2px solid #F9C9C8;
-    border-radius: 5px;
-    padding: 10px
+.parag {
+  line-height: 1.5;
+  text-indent: 15px;
+  margin: 10px;
+  font-size: 16px;
+  font-family: raleway , sans-serif;
+  color:  rgb(25, 25, 25);
+  width: 500px;
+  height: auto;
+  border: 2px solid #F9C9C8;
+  border-radius: 5px;
+  padding: 10px
     
-  }
+}
 
   
   /* animations texte presentation */
 
- .parag:hover {
+.parag:hover {
   background-color: #F9C9C8;
   font-size: 20px;
   padding: 10px;
   border-radius: 12px;
- }
+}
 
+/* presentation responsive */
 
+@media screen and (max-width: 680px) {
 
+  .image-text {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .imageResto {
+    max-width: 680px;
+  }
+
+  .parag {
+    max-width: 680px;
+  }
+
+}
 
 
 
