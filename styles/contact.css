@@ -53,6 +53,7 @@ body {
   font-weight: 500;
   font-family: "Montserrat", sans-serif;
   font-style: italic;
+  cursor: pointer;
 }
 
 #contact-img {
@@ -82,7 +83,7 @@ body {
 }
 
 .shy-racoon {
-  top: 22% !important;
+  top: 21.9vh !important;
   visibility: visible !important;
   z-index: 0 !important;
 }
@@ -90,6 +91,16 @@ body {
 @media screen and (max-width: 780px) {
   .shy-racoon {
     top: 7% !important;
+  }
+}
+@media screen and (min-height: 950px) {
+  .shy-racoon {
+    top: 30vh !important;
+  }
+}
+@media screen and (min-height: 1400px) {
+  .shy-racoon {
+    top: 34vh !important;
   }
 }
 

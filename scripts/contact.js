@@ -3,20 +3,12 @@
 document.getElementById('main-title').addEventListener("mouseover", () => {
   const img = document.getElementById('contact-img');
   img.classList.add("img-filter-over");
-  const racoon = document.getElementById("contact-racoon");
-  racoon.classList.add("shy-racoon");
 })
 
 document.getElementById('main-title').addEventListener("mouseleave", () => {
   const img = document.getElementById('contact-img');
   img.classList.remove("img-filter-over");
 })
-
-document.getElementById("contact-racoon").addEventListener("click", () => {
-  const racoon = document.getElementById("contact-racoon");
-  racoon.classList.remove("shy-racoon");
-})
-
 
 // Modal
 
@@ -39,3 +31,16 @@ document.querySelector(".modal-btn").addEventListener("click", () => {
   console.log('modalBg:', modalBg)
   modalBg.classList.remove("modal-bg-active");
 });
+
+
+/* Racoon */
+
+document.getElementById('main-title').addEventListener("click", () => {
+  const racoon = document.getElementById("contact-racoon");
+  racoon.classList.toggle("shy-racoon");
+})
+
+document.getElementById("contact-racoon").addEventListener("click", () => {
+  const racoon = document.getElementById("contact-racoon");
+  racoon.classList.remove("shy-racoon");
+})
