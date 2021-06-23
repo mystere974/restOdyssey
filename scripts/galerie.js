@@ -119,14 +119,14 @@ const buttonContainer = document.querySelector("#nav-gallery ul");
 const btns = buttonContainer.getElementsByClassName("btn");
 
 // Loop through the buttons and add the active class to the current/clicked button
-for (let i = 0; i < navButton.length; i++) {
+for (let i = 0; i < btns.length; i++) {
     btns[i].addEventListener("click", function(){
         const current = document.getElementsByClassName("active");
         // If there's no active class
         if (current.length > 0) {
-            current[0].className = current[0].className.replace("active", '');
+            current[0].className = current[0].className.replace(" active", '');
         }
         // Add the active class to the current/clicked button
-        globalThis.className += "active";
+        this.className += " active";
     });
 }

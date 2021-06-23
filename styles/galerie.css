@@ -63,12 +63,12 @@ h4 {
     color: #38424e;
 }
 
-#nav-gallery li.btn a:hover{
+#nav-gallery li.btn a:hover { 
     text-decoration: underline;
     color: #F76C6C;   
 }
 
-.active {
+#nav-gallery .active {
     text-decoration: underline;
     color: #F76C6C;  
 }
