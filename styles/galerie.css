@@ -1,7 +1,7 @@
 h1 {
         font-size: 113%;
 }
-        
+
 h2 {
     font-size: 219%;
     font-weight: 500;
@@ -19,7 +19,7 @@ h3 {
     font-family: raleway, sans-serif;
     text-align: center;
     color: #F76C6C;
-    padding: 0px 0px 25px 0px;
+    padding: 0px 0px 35px 0px;
 }
 
 h4 {
@@ -31,20 +31,14 @@ h4 {
     padding: 0px 0px 20px 0px;
 }
 
-/* .gallery {
-    width: 100%;
-} */
-
-#gallery-header {
-    width: 100%;
-    z-index: 2;
-
-}
-
+/* HEAD */
 #gallery-banner {
     width: 100%;
+    background: url('../ressources/gallery-banner.jpg') center/cover;
+    height: 30vh;
 }
 
+/* NAV */
 #nav-gallery ul {
     display: flex;
     justify-content: space-around;
@@ -74,6 +68,26 @@ h4 {
     color: #F76C6C;   
 }
 
+/* STICKY HEADER */
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    padding-top: 6vh;
+    top: 0;
+    width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+    padding-top: 102px;
+}
+
+/* GALLERY */
+#gallery-header {
+    width: 100%;
+    z-index: 2;
+}
+
 #gallery {
     display: flex;
     flex-flow: column;
@@ -83,9 +97,6 @@ h4 {
 
 .gallery-picture {
     margin: auto;
-}
-
-.gallery-picture img {
     width: 100%;
     max-width: 830px;
     height: auto;
@@ -96,88 +107,28 @@ h4 {
     border-bottom: 1px solid #f1f1f1;
 }
 
+/* FOOTER */
 footer {
     position: relative;
 } 
+
+/* MEDIAS CREEEN */
 /* these rules apply only to screens 414 pixels and smaller */
-@media screen and (max-width: 414px) { 
-
-    h1 {
-        font-size: 113%;
-    }
-    
+@media screen and (max-width: 414px) {    
     h2 {
-        font-family: montserrat, sans-serif;
         font-size: 100%;
-        font-weight: 500;
-        text-transform: uppercase;
-        text-align: center;
-        color: #38424e;
-        padding: 20px 0px 10px 0px;
-
     }
 
     h3 {
         font-size: 63%;
-        font-weight: 500;
-        text-transform: uppercase;
-        color: #F76C6C;
-        font-family: raleway, sans-serif;
-        text-align: center;
-        padding: 0px 0px 25px 0px;
     }
 
     h4 {
         font-size: 80%;
-        font-weight: 700;
-        text-align: center;
-        color: #F76C6C;
-        font-family: montserrat, sans-serif;
-        padding: 0px 0px 20px 0px;
         margin-top: 65px;
-
-
     }
 
-    .gallery {
-        width: 100%;
-    }
-
-    #nav-gallery ul {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        padding: 0px 20px;
-
-        height: 55px;
-
-        list-style: none;
-        background-color: #fff;
-        opacity: 80%;
-    }
-
-    #nav-gallery li a {
-        width: auto;
-
-        font-family: raleway, sans-serif;
-        font-size: 90%;
-        font-weight: 500;
-        text-decoration: none;
-        text-transform: uppercase;
-        color: #38424e;
-    }
-
-    #nav-gallery li a:hover, a:active {
-        text-decoration: underline;
-        color: #F76C6C;   
-    }
-
-    #gallery {
-        display: flex;
-        flex-flow: column;
-        align-items: center;
-    }
-
+/* GALLERY */
     #gallery-header {
         width: 100%;
         z-index: 2;
@@ -187,14 +138,11 @@ footer {
     .gallery-picture {
         margin: auto;
         width: 280px;
-        height: 280px;
-        background-color: black;
-        
+        height: 280px;        
     }
 
-    .course-container {
-        margin-top: 40px;
-        border-bottom: 1px solid #f1f1f1;
+    #gallery{
+        padding-bottom: 6vh;
     }
 
     footer {
@@ -202,8 +150,16 @@ footer {
     } 
 }
 
+/* these rules apply only to screens 780 pixels and smaller */
 @media screen and (max-width: 780px) {
     #gallery-banner {
         display: none;
     }
+    .sticky {
+        padding-top: 0;
+    }
+}
+
+#gallery{
+    padding-bottom: 6vh;
 }
