@@ -91,28 +91,27 @@
   justify-content: space-around;
   align-items: center;
 }
+  .parag {
+    line-height: 1.5;
+    text-indent: 15px;
+    margin: 10px;
+    font-size: 16px;
+    font-family: raleway , sans-serif;
+    color:  rgb(25, 25, 25);
+    width: 500px;
+    height: auto;
+    border: 2px solid #F9C9C8;
+    border-radius: 5px;
+    padding: 10px    
+  }
 
-.parag {
-  line-height: 1.5;
-  text-indent: 15px;
-  margin: 10px;
-  font-size: 16px;
-  font-family: raleway , sans-serif;
-  color:  rgb(25, 25, 25);
-  width: 500px;
-  height: auto;
-  border: 2px solid #F9C9C8;
-  border-radius: 5px;
-  padding: 10px    
-}
-
-.imageResto {
+  .imageResto {
   width: 50%;
   height: auto;
   margin-right: 10px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-}
+  }
+
+
   
 
 .small-titles {
@@ -139,6 +138,15 @@
   padding: 10px;
   border-radius: 12px;
 }
+
+.imageResto:hover {
+  border-radius: 10px;
+  background: #bdbcbc;
+  box-shadow:  10px 10px 20px #a1a0a0,
+             -10px -10px 20px #d9d8d8;
+}
+
+
 
 /* presentation responsive */
 
