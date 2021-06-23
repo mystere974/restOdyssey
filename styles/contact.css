@@ -229,6 +229,17 @@ body {
   transition: all 0.25s ease-out;
 }
 
+.form-submit:hover {
+  transform: translate(5px, -5px);
+  background-color: var(--main-bg-color);
+  color: var(--subtitle3-color);
+}
+
+.form-submit:active {
+  background-color: var(--subtitle3-color);
+  color: var(--main-bg-color);
+}
+
 
 .form-items input:focus:invalid, .form-items textarea:focus:invalid  {
   background-color: rgba(235, 213, 213, 0.5);
@@ -307,6 +318,7 @@ footer {
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s, opacity 0.5s;
+  z-index: 10;
 }
 
 .modal {
@@ -340,7 +352,7 @@ footer {
   transform: translate(-1px, -1px);
   cursor: pointer;
   border: 1px solid var(--subtitle3-color);
-  transition: all 0.15s ease-out;
+  transition: all 0.005s ease-in-out;
   margin-bottom: 3px;
 }
 
