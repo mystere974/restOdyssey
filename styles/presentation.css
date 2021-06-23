@@ -115,7 +115,7 @@
 .small-titles {
   display: block;
   text-align: center;
-  color: var(--title-color);
+  color: #8e8e8c;
   font-size: 24px;
   font-family: montserrat, sans-serif;
   padding: 20px;
@@ -143,6 +143,7 @@
   box-shadow:  10px 10px 20px #a1a0a0,
              -10px -10px 20px #d9d8d8;
 }
+
 
 
 
