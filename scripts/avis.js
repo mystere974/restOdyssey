@@ -2,6 +2,8 @@
 
 const opinionsContainer = document.querySelector('.opinions-container');
 const starRating = document.querySelectorAll('.star');
+const meanRating = document.querySelector('.opinions-rated');
+
 
 // Push the comment on left or right if the number is even or uneven
 let commentPosition = 1;
@@ -37,6 +39,23 @@ const userComment4 = {
 //******** Array
 
 const commentsList = [userComment1, userComment2, userComment3, userComment4];
+const userRatings = [];
+
+//******** Function to add the mean of the opinions
+const ratingAdd = (rate, array) => {
+    array.push(parseInt(rate));
+}
+
+const ratingMean = (array) => {
+    let arrayEntries = array.length;
+    console.log(arrayEntries);
+    let sum = array.reduce((total, rate) => total + rate);
+    return Math.round((sum / arrayEntries) * 100) / 100;
+}
+
+const addRatingMeanDiv = (mean) => {
+    meanRating.innerHTML = `Note moyenne : ${mean} <span class="rating-gold">★</span>`;
+}
 
 
 //******** User Interaction Functions
@@ -44,16 +63,16 @@ const commentsList = [userComment1, userComment2, userComment3, userComment4];
 // Function to add color to the selected stars
 const coloringStars = (starNumber) => {
 
+    starRating.forEach((star) => {
+        star.classList.remove('unique-comment-rating-gold');
+        star.classList.remove('unique-comment-rating-gold');
+    });
+
     for(let i = 0; i < parseInt(starNumber); i++) {
-      /*  if(starRating[i].className === "unique-comment-rating") {
-            starRating[i].classList.remove('unique-comment-rating');
-        }
-    */
-        //starRating[i].classList.toggle('unique-comment-rating');
+      
         starRating[i].classList.toggle('unique-comment-rating-black');
         starRating[i].classList.toggle('unique-comment-rating-gold');
      
-        //   starRating[i].classList.add('unique-comment-rating-gold');
     }
 }
 
@@ -109,7 +128,7 @@ const createComment = (name, rating, message) => {
 // Function to add classes to the comment elements
 const addClassComment = (container, name, rating, message) => {
     container.classList.add('unique-comment-container');
-    name.classList.add('test');
+    name.classList.add('unique-comment-name');
     rating.classList.add('unique-comment-rating-gold');
     message.classList.add('unique-comment-message');
 }
@@ -129,15 +148,19 @@ const positionClassComment = (container) => {
 
 //******** Page Generation Functions
 
+// Create all the elements, add the info and add the rating in the array
 for(let i = 0; i < commentsList.length; i++) {
     createComment(commentsList[i].name, commentsList[i].rating, commentsList[i].comment);
+    ratingAdd(commentsList[i].rating, userRatings);   
 }
+
+// Calc the mean and add it to the div
+addRatingMeanDiv(ratingMean(userRatings));
 
 // Click on a star
 starRating.forEach(function(ratingStar) {
     ratingStar.addEventListener('click', () => {
         starRatingValue = ratingStar.getAttribute('value');
-        //console.log(starRatingValue);
         coloringStars(starRatingValue);
     });
 });
@@ -152,6 +175,9 @@ document.querySelector('#submit').addEventListener('click', function(e) {
 
     createComment(nameSubmit, ratingSubmit, messageSubmit);
 
+    ratingAdd(ratingSubmit, userRatings);
+    // Calc the mean and add it to the div
+    addRatingMeanDiv(ratingMean(userRatings));
 });
 
 

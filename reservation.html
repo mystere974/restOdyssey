@@ -42,10 +42,11 @@
         <!-- Title -->
         <h1>Réservation</h1>
 
-        <h2>Détails</h2>
+        <!-- Confirmation container -->
+        <section id="confirmation-container" class="confirmation-container"></section>
 
         <!-- Pickup reservation Container -->
-        <div id="reservation-global-container">
+        <section id="reservation-global-container">
             <!-- Subtitle -->
             <h3>Sélectionner une date pour la réservation</h3>
 
@@ -75,16 +76,16 @@
 
                 <div class="reservation-input-element">
                     <label for="reservation-number">Nombre : </label>
-                    <input type="number" id="reservation-number" min="1" max="10" />
+                    <input type="number" id="reservation-number" min="1" max="10" value="1"/>
                 </div>
 
                 <button id="submit" class="reservation-input-element reservation-button"><span class="hand-icon">&#9758;</span> Réserver</button>
             </div>
 
-        </div>
+        </section>
 
         <!-- Global phone reservation -->
-        <div id="phone-global-reservation">
+        <section id="phone-global-reservation">
 
             <!-- Phone reservation -->
             <div id="reservation-phone-container">
@@ -102,7 +103,7 @@
                 <a href="tel:03.13.26.33.49" class="phone-number"><span class="phone-icon">&#9743;</span> 03.13.26.33.49</a>
 
             </div>
-        </div>
+        </section>
         <footer>
             <p>© 2021 Racoon Team - Hébergement GitHub, <a href="mentions-legales.html" target='_blank'>À propos et mentions légales</a></p>
         </footer>
