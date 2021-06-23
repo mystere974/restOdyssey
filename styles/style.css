@@ -117,9 +117,8 @@ footer p a {
 margin: auto;
 color: #fff;
 }
-/* footer {   Mis en commentaire car fait beuger le footer de la page acceuil.
-  position: relative;
-} */
+
+
 .main-title {
   color: var(--main-bg-color);
   text-transform: uppercase;
@@ -187,6 +186,10 @@ color: #fff;
 
 .nav-items-container a:hover, a:active {
   text-decoration: underline;
+}
+
+.nav-active-color {
+  filter: invert(55%);
 }
 
 /* NAV BURGER */
@@ -333,19 +336,19 @@ color: #fff;
 }
 
 .accueil-menu-img {
-  background-image: url("/ressources/menu.jpg");
+  background-image: url("../ressources/menu.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .accueil-present-img {
-  background-image: url("/ressources/present.jpg");
+  background-image: url("../ressources/present.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .accueil-order-img {
-  background-image: url("/ressources/order.jpg");
+  background-image: url("../ressources/order.jpg");
   background-position: center;
   background-size: cover;
 }
