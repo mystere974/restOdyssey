@@ -2,6 +2,8 @@ const modalBtn = document.querySelector(".modal-btn");
 const modalBg = document.querySelector(".modal-bg");
 const modalClose = document.querySelector(".modal-close");
 const sendBtn = document.querySelector(".send-btn");
+const readMore = document.querySelector(".read-more");
+const tableImg = document.querySelector(".table-img");
 
 modalBtn.addEventListener("click", function(){
     modalBg.classList.add("bg-active");
@@ -16,3 +18,7 @@ sendBtn.addEventListener("click", function(event){
     alert("Merci d'avoir choisi l'Odysssey!");
 });
 
+tableImg.addEventListener("mouseover", function(){
+    readMore.classList.toggle("visible");
+    tableImg.classList.toggle("opacity");
+});
