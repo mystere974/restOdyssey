@@ -133,9 +133,10 @@
 
 .parag:hover {
   background-color: #F9C9C8;
-  font-size: 20px;
+  font-size: 17px;
   padding: 10px;
   border-radius: 12px;
+  transition: transform 0,3s ease-in-out;
 }
 
 .image-texte-container img:hover {
@@ -252,7 +253,7 @@
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
-      background-color: var(--subtitle2-color);
+      background-color: var(--subtitle3-color);
       transition: transform 0.5s ease-in;
   }
   
