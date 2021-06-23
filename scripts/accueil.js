@@ -3,7 +3,7 @@ const h2Anim = document.querySelector("h2");
 
 
 let typeHOne = new Typewriter(h1Anim, {
-  delay: 200,
+  delay: 180,
   cursor: ""
 })
 
@@ -13,8 +13,8 @@ typeHOne
 
 
 let typeHTwo = new Typewriter(h2Anim, {
-  delay: 150,
-  deleteSpeed: 50,
+  delay: 120,
+  deleteSpeed: 40,
   cursor: "."
 })
 
@@ -31,7 +31,6 @@ typeHTwo
   .typeString('<span style="color: #E7EC2C">Javascript</span>')
   .pauseFor(300)
   .deleteChars(11)
-  .changeDelay(50)
   .typeString('<span style="color: #F76C6C">Wild</span>')
   .pauseFor(1000)
   .start();
