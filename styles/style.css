@@ -336,19 +336,19 @@ color: #fff;
 }
 
 .accueil-menu-img {
-  background-image: url("../ressources/menu.jpg");
+  background-image: url("../ressources/menu.jpeg");
   background-position: center;
   background-size: cover;
 }
 
 .accueil-present-img {
-  background-image: url("../ressources/present.jpg");
+  background-image: url("../ressources/present.jpeg");
   background-position: center;
   background-size: cover;
 }
 
 .accueil-order-img {
-  background-image: url("../ressources/order.jpg");
+  background-image: url("../ressources/order.jpeg");
   background-position: center;
   background-size: cover;
 }
