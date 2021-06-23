@@ -13,10 +13,35 @@ h1 {
     font-size: 2rem;
 }
 
-h2 {
-    display: none;
+
+/****** Confirmation container */
+#confirmation-container {
+    transition: 1s; 
+}
+.confirmation-container {
+    width: 100%;
+    opacity: 0;
+    font-size: 2rem;
+    color: black;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
 }
 
+.confirmation-show-success, .confirmation-show-error {
+    opacity: 1;
+    min-height: 10vh;
+    line-height: 10vh;
+     
+}
+
+.confirmation-show-success {
+    background-color: rgb(47, 255, 75);
+}
+
+.confirmation-show-error {
+    background-color: rgb(255, 47, 47);
+}
 
 /****** Date pickup reservation */
 
