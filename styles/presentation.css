@@ -75,7 +75,7 @@
   
   /* text and img */
 
-#title-main {
+.title-main {
   display: block;
   text-align: center;
   color: var(--title-color);
