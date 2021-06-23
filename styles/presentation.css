@@ -105,10 +105,11 @@
     padding: 10px    
   }
 
-  .imageResto {
+  .image-texte-container img {
   width: 50%;
   height: auto;
   margin-right: 10px;
+  border-radius: 15px;
   }
 
 
@@ -137,8 +138,8 @@
   border-radius: 12px;
 }
 
-.imageResto:hover {
-  border-radius: 10px;
+.image-texte-container img:hover {
+  border-radius: 20px;
   background: #bdbcbc;
   box-shadow:  10px 10px 20px #a1a0a0,
              -10px -10px 20px #d9d8d8;
@@ -156,8 +157,8 @@
     flex-flow: column;
   }
 
-  .imageResto {
-    max-width: 80%;
+  .image-texte-container img {
+    width: 80%;
   }
 
   .parag {

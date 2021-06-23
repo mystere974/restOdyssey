@@ -9,7 +9,7 @@ let typeHOne = new Typewriter(animMainTitle, {
   })
   
   typeHOne
-  .typeString("L'Odyssey, Qui sommes nous")
+  .typeString("L'Odyssey, Qui sommes nous?")
   .start()
 
 
