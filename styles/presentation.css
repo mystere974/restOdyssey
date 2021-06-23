@@ -109,6 +109,7 @@
   width: 50%;
   height: auto;
   margin-right: 10px;
+  border-radius: 15px;
   }
 
 
@@ -163,7 +164,7 @@
 
   .parag {
     max-width: 680px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 
 }
