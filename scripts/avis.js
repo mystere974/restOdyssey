@@ -63,18 +63,16 @@ const addRatingMeanDiv = (mean) => {
 // Function to add color to the selected stars
 const coloringStars = (starNumber) => {
 
-   
+    starRating.forEach((star) => {
+        star.classList.remove('unique-comment-rating-gold');
+        star.classList.remove('unique-comment-rating-gold');
+    });
 
     for(let i = 0; i < parseInt(starNumber); i++) {
-      /*  if(starRating[i].className === "unique-comment-rating") {
-            starRating[i].classList.remove('unique-comment-rating');
-        }
-    */
-        //starRating.classList.add('unique-comment-rating-black');
+      
         starRating[i].classList.toggle('unique-comment-rating-black');
         starRating[i].classList.toggle('unique-comment-rating-gold');
      
-        //   starRating[i].classList.add('unique-comment-rating-gold');
     }
 }
 
@@ -163,7 +161,6 @@ addRatingMeanDiv(ratingMean(userRatings));
 starRating.forEach(function(ratingStar) {
     ratingStar.addEventListener('click', () => {
         starRatingValue = ratingStar.getAttribute('value');
-        //console.log(starRatingValue);
         coloringStars(starRatingValue);
     });
 });
