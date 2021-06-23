@@ -34,3 +34,16 @@ typeHTwo
   .typeString('<span style="color: #F76C6C">Wild</span>')
   .pauseFor(1000)
   .start();
+
+  /* Racoon */
+
+  document.querySelector("h1").addEventListener("click", () => {
+    const racoon = document.getElementById("accueil-racoon");
+    racoon.classList.toggle("accueil-racoon");
+  });
+
+  document.getElementById("accueil-racoon").addEventListener("click", () => {
+    const racoon = document.getElementById("accueil-racoon");
+    racoon.classList.remove("accueil-racoon");
+  });
+

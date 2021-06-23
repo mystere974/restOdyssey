@@ -516,6 +516,7 @@ header {
 }
 
 
+
 /* Burger Menu Animation */
 
 .nav-active {
@@ -558,4 +559,26 @@ to {
   transform: rotate(-45deg); /* translate(0px, 0px); */
   transition: top 0.4s ease-in-out,
               transform 0.4s 0.4s ease-in-out;
+}
+}
+
+/* Racoon */
+
+#accueil-racoon {
+  position: absolute;
+  width: 500px;
+  height: auto;
+  left: -460px;
+  top: -10px;
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+  z-index: 0;
+  filter: blur(0) sepia(0%) contrast(100%);
+  visibility: hidden;
+}
+
+.accueil-racoon {
+  transform: rotate(65deg) !important;
+  left: -280px !important;
+  visibility: visible !important;
 }
