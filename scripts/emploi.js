@@ -1,6 +1,18 @@
-let modalBtn = document.querySelector(".modal-btn");
-let modalBg = document.querySelector(".modal-bg");
+const modalBtn = document.querySelector(".modal-btn");
+const modalBg = document.querySelector(".modal-bg");
+const modalClose = document.querySelector(".modal-close");
+const sendBtn = document.querySelector(".send-btn");
 
-modalBtn.addEventListener('click', function(){
-    modalBg.classList.add(".bg-active");
+modalBtn.addEventListener("click", function(){
+    modalBg.classList.add("bg-active");
 });
+
+modalClose.addEventListener("click", function(){
+    modalBg.classList.remove("bg-active");
+});
+
+sendBtn.addEventListener("click", function(event){
+    event.preventDefault();
+    alert("Merci d'avoir choisi l'Odysssey!");
+});
+

@@ -133,6 +133,7 @@ body {
   align-items: center;
   visibility: hidden;
   opacity: 0;
+  transition: opacity 1s linear;
 }
 
 .bg-active {
