@@ -187,7 +187,7 @@ body {
   transform: translate(-1px, -1px);
   cursor: pointer;
   border: 1px solid var(--subtitle3-color);
-  transition: all 0.25s ease-out 0.05s;
+  transition: all 0.25s ease-out;
 }
 
 /* .box-submit{
@@ -257,3 +257,79 @@ footer {
   }
 }
 
+/* Modal */
+
+.modal-title {
+  font-size: 1rem;
+  padding: 15px;
+  line-height: 25px;
+  word-spacing: 3px;
+}
+
+.modal-bg {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s;
+}
+
+.modal {
+  background-color: var(--main-bg-color);
+  width: 40%;
+  height: 20%;
+  border-radius: 5px;
+  box-shadow: 0 0 15px var(--main-text-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: justify;
+}
+
+.modal-bg-active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal-btn {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: var(--subtitle2-color);
+  background-color: var(--subtitle3-color);
+  color: var(--main-bg-color);
+  font-size: 1rem;
+  font-weight: 500;
+  width: 70px;
+  transform: translate(-1px, -1px);
+  cursor: pointer;
+  border: 1px solid var(--subtitle3-color);
+  transition: all 0.15s ease-out;
+  margin-bottom: 3px;
+}
+
+.modal-btn:active {
+  background-color: var(--main-bg-color);
+  color: var(--subtitle3-color);
+}
+
+@media screen and (max-width: 1000px) {
+  .modal {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .modal {
+    width: 70%;
+    height: 30%;
+  }
+}
