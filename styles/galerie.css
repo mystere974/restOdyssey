@@ -1,5 +1,5 @@
 h1 {
-        font-size: 113%;
+    font-size: 113%;
 }
 
 h2 {
@@ -52,7 +52,7 @@ h4 {
     opacity: 80%;
 }
 
-#nav-gallery li a {
+#nav-gallery li.btn a {
     width: auto;
 
     font-family: raleway, sans-serif;
@@ -63,9 +63,14 @@ h4 {
     color: #38424e;
 }
 
-#nav-gallery li a:hover, a:active {
+#nav-gallery li.btn a:hover{
     text-decoration: underline;
     color: #F76C6C;   
+}
+
+.active {
+    text-decoration: underline;
+    color: #F76C6C;  
 }
 
 /* STICKY HEADER */
@@ -100,6 +105,8 @@ h4 {
     width: 100%;
     max-width: 830px;
     height: auto;
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px #a1a0a0, -10px -10px 20px #d9d8d8;
 }
 
 .course-container {
@@ -138,11 +145,11 @@ footer {
     .gallery-picture {
         margin: auto;
         width: 280px;
-        height: 280px;        
+        height: 280px;      
     }
 
     #gallery{
-        padding-bottom: 6vh;
+        padding-bottom: 6vh 0vh;
     }
 
     footer {
@@ -151,7 +158,7 @@ footer {
 }
 
 /* these rules apply only to screens 780 pixels and smaller */
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 680px) {
     #gallery-banner {
         display: none;
     }
@@ -161,5 +168,5 @@ footer {
 }
 
 #gallery{
-    padding-bottom: 6vh;
+    padding-bottom: 6vh 0vh;
 }

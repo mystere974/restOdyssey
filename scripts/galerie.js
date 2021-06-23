@@ -55,7 +55,7 @@ const courseToAdd = [
         section: "spicy",
         name: "glace choco piment",
         picture: {src:"ressources/desktop/spicy-dessert.jpg", alt:"glace choco piment"},
-        info: "nut free - spicy"
+        info: "spicy - yummy"
     },
 
 ] 
@@ -110,4 +110,23 @@ function stickyMenu() {
     } else {
     navGallery.classList.remove("sticky");
     }
+}
+
+// CLASS BUTTON PAGE ACTIVE //
+//Get the container element
+const buttonContainer = document.querySelector("#nav-gallery ul");
+// Get all buttons with class="btn" inside the container
+const btns = buttonContainer.getElementsByClassName("btn");
+
+// Loop through the buttons and add the active class to the current/clicked button
+for (let i = 0; i < navButton.length; i++) {
+    btns[i].addEventListener("click", function(){
+        const current = document.getElementsByClassName("active");
+        // If there's no active class
+        if (current.length > 0) {
+            current[0].className = current[0].className.replace("active", '');
+        }
+        // Add the active class to the current/clicked button
+        globalThis.className += "active";
+    });
 }
