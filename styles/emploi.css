@@ -63,7 +63,12 @@
   opacity: 0;
 }
 
-.opacity {
+.read-more a {
+  text-decoration: none;
+  color: #38424e;
+}
+
+.fade {
   opacity: 0.5;
 }
 
