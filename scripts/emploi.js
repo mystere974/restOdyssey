@@ -24,9 +24,16 @@ tableImg.addEventListener("mouseover", function(){
     readMore.classList.toggle("visible");
 });
 
-
-// const tableImg = document.querySelectorAll(".table-img").forEach(tableImg => {
-//     tableImg.addEventListener("mouseover", event => {
-//         tableImg.classList.toggle("fade");    
+// const tableImg = document.querySelectorAll(".table-img");
+// tableImg.forEach(item => {
+//     item.addEventListener("mouseover", function(){
+//     item.classList.toggle("fade");
 //     });
 // });
+
+// // const readMore = document.querySelectorAll(".read-more");
+// // readMore.forEach(item => {
+// //     item.addEventListener("mouseover", function(){
+// //     item.classList.toggle("visible");
+// //     });
+// // });
