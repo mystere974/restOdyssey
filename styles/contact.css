@@ -83,7 +83,7 @@ body {
 }
 
 .shy-racoon {
-  top: 21.9vh !important;
+  top: 16.9vh !important;
   visibility: visible !important;
   z-index: 0 !important;
 }
@@ -95,12 +95,12 @@ body {
 }
 @media screen and (min-height: 950px) {
   .shy-racoon {
-    top: 30vh !important;
+    top: 25vh !important;
   }
 }
 @media screen and (min-height: 1400px) {
   .shy-racoon {
-    top: 34vh !important;
+    top: 29vh !important;
   }
 }
 
@@ -194,7 +194,7 @@ body {
 }
 
 .form-items input {
-  height: 30px;
+  height: 35px;
 }
 
 .form-items input, .form-items textarea {
@@ -229,6 +229,17 @@ body {
   transition: all 0.25s ease-out;
 }
 
+.form-submit:hover {
+  transform: translate(5px, -5px);
+  background-color: var(--main-bg-color);
+  color: var(--subtitle3-color);
+}
+
+.form-submit:active {
+  background-color: var(--subtitle3-color);
+  color: var(--main-bg-color);
+}
+
 
 .form-items input:focus:invalid, .form-items textarea:focus:invalid  {
   background-color: rgba(235, 213, 213, 0.5);
@@ -255,13 +266,13 @@ footer {
 @media screen and (min-width: 780px) {
 
   .main {
-    height: 40vh;
+    height: 35vh;
   }
 
   .container {
     flex-direction: row;
     align-items: stretch;
-    height: 54vh;
+    height: 59vh;
   }
 
   .adress-container {
@@ -307,6 +318,7 @@ footer {
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s, opacity 0.5s;
+  z-index: 10;
 }
 
 .modal {
@@ -340,7 +352,7 @@ footer {
   transform: translate(-1px, -1px);
   cursor: pointer;
   border: 1px solid var(--subtitle3-color);
-  transition: all 0.15s ease-out;
+  transition: all 0.005s ease-in-out;
   margin-bottom: 3px;
 }
 
@@ -359,5 +371,15 @@ footer {
   .modal {
     width: 70%;
     height: 30%;
+  }
+
+  .main {
+    display: none;
+  }
+
+  .adress-container h2 {
+    color: var(--subtitle3-color);
+    text-align: center;
+    margin-top: 20px;
   }
 }

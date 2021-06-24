@@ -185,13 +185,55 @@ color: #fff;
   list-style: none;
 }
 
-.nav-items-container a:hover, .nav-items-container a:active {
-  filter: invert(55%);
-  text-decoration: underline;
+.item {
+  position: relative;
 }
 
+.item a::after,
+.item a::before,
+.nav-burger-item a::after,
+.nav-burger-item a::before {
+  content:"";
+  width: 0;
+  position:absolute;
+  transition: width 1s;
+}
+.item a::after {
+  top: -4px;
+  left: 0px;
+  border-top:2px solid var(--nav-text-color);
+}
+.item a::before {
+  bottom:-4px;
+  right: 0px;
+  border-bottom:2px solid var(--main-bg-color);
+}
+
+.item a:hover::after,
+.item a:hover::before{
+  width: 50%;
+}
+
+.nav-burger-item a::after {
+  top: -5px;
+  left: 0px;
+  border-top:2px solid var(--nav-text-color);
+}
+
+.nav-burger-item a::before {
+  bottom: -5px;
+  right: 0px;
+  border-bottom:2px solid var(--nav-text-color);
+}
+
+.nav-burger-item a:hover::after,
+.nav-burger-item a:hover::before {
+  width: 50%;
+}
+
+
 .nav-active-color {
-  filter: invert(55%);
+  filter: invert(55%)
 }
 
 /* NAV BURGER */
@@ -252,10 +294,6 @@ color: #fff;
   .nav-burger-item li {
     list-style: none;
   }
-  .nav-burger-item a:hover, .nav-burger-item a:active {
-    filter: invert(55%);
-    text-decoration: underline;
-  }
 
 /* Accueil */
 
@@ -300,10 +338,15 @@ color: #fff;
 .accueil-link {
   width: 25%;
   height: 75%;
-  border-radius: 3px;
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  border-radius: 15px;
+}
+
+.accueil-link:hover {
+  box-shadow: 10px 10px 20px #a1a0a0,
+              -10px -10px 20px #d9d9d8;
 }
 
 .link-box {
@@ -323,15 +366,24 @@ color: #fff;
   transition: transform 0.15s ease-in-out;
 }
 
-.accueil-link button:active {
+.accueil-link button:hover {
   background-color: var(--subtitle3-color);
   border: #38424e 1ps solid;
   transform: translate(5px, -5px);
 }
 
-.accueil-link a:active {
+.accueil-link a:hover {
   color: var(--main-bg-color);
 }
+
+.accueil-link button:active {
+  background-color: var(--main-bg-color);
+}
+
+.accueil-link a:active {
+  color: var(--subtitle3-color);
+}
+
 
 .accueil-link a {
   text-decoration: none;
