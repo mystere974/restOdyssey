@@ -1,16 +1,20 @@
  /*EMPLOI*/
 
+ .banner {
+    height: 30vh;
+    background: url('../ressources/banner-emploi.jpg') center/cover;
+    opacity: 0.7;
+ }
+
   h2 {
     font-size: 34px;
     font-weight: 500;
     font-family: raleway, sans-serif;
-    padding:90px;
     text-align: center;
     color:white;
-    text-shadow: lightgray 1px 1px;
+    text-shadow:black 2px 2px;
     font-style: italic;
-    background-color:#38424e;
-    
+    padding-top: 100px;
   }
   
   h3 {
@@ -238,6 +242,10 @@ input, label {
     padding: 20px;
     line-height: 20px;
     padding-bottom: 30px;
+  }
+
+  .banner {
+    display: none;
   }
 }
 
