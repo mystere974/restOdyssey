@@ -117,7 +117,7 @@ body {
 
 .adress-container h2 {
   margin: 25px 0 30px 20px;
-  font-size: 1rem;
+  font-size: 1.3rem;
   text-align: left;
   color: var(--main-text-color);
   padding: 0;
@@ -370,13 +370,11 @@ footer {
   .modal {
     width: 60%;
   }
-}
-
-@media screen and (max-width: 850px) {
   .adress-container h2 {
     text-align: center;
   }
 }
+
 
 @media screen and (max-width: 780px) {
   .adress-container h2 {
