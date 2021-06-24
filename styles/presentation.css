@@ -1,16 +1,22 @@
 /* Banner */
 
-#galleryHeader {
-  width: 100vw;
-  z-index: 2;
-}
-
-#galleryBanner  img {
+/*#galleryHeader img {
   width: 100%;
+  height: 30vh;
   object-fit: cover;
-  height: 30vh; 
-}
+}*/
 
+#galleryHeader h1 {
+  background: url('../ressources/restoBanner.jpg') center/cover;
+  text-align: center;
+  width: 100%;
+  margin: 0px auto;
+  height: 30vh;
+  line-height: 30vh;
+  color: beige;
+  text-shadow: 2px 2px 3px black;
+  font-size: 2rem;
+}
 
 
 /* text and img */
@@ -50,6 +56,7 @@
   height: auto;
   margin-right: 10px;
   border-radius: 15px;
+  margin: 10px;
   }
 
 
@@ -75,6 +82,7 @@ footer {
 
   
   /* animations texte presentation */
+
 
 .parag:hover {
   background-color: #F9C9C8;
