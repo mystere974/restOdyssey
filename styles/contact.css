@@ -83,7 +83,7 @@ body {
 }
 
 .shy-racoon {
-  top: 21.9vh !important;
+  top: 16.9vh !important;
   visibility: visible !important;
   z-index: 0 !important;
 }
@@ -95,12 +95,12 @@ body {
 }
 @media screen and (min-height: 950px) {
   .shy-racoon {
-    top: 30vh !important;
+    top: 25vh !important;
   }
 }
 @media screen and (min-height: 1400px) {
   .shy-racoon {
-    top: 34vh !important;
+    top: 29vh !important;
   }
 }
 
@@ -194,7 +194,7 @@ body {
 }
 
 .form-items input {
-  height: 30px;
+  height: 35px;
 }
 
 .form-items input, .form-items textarea {
@@ -266,13 +266,13 @@ footer {
 @media screen and (min-width: 780px) {
 
   .main {
-    height: 40vh;
+    height: 35vh;
   }
 
   .container {
     flex-direction: row;
     align-items: stretch;
-    height: 54vh;
+    height: 59vh;
   }
 
   .adress-container {
@@ -371,5 +371,15 @@ footer {
   .modal {
     width: 70%;
     height: 30%;
+  }
+
+  .main {
+    display: none;
+  }
+
+  .adress-container h2 {
+    color: var(--subtitle3-color);
+    text-align: center;
+    margin-top: 20px;
   }
 }
