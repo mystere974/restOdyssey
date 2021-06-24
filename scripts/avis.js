@@ -146,6 +146,12 @@ const positionClassComment = (container) => {
 
 //******** Events
 
+
+//****** Easter Egg */
+document.querySelector('h1').addEventListener('click', () => {
+  document.querySelector('#raccoon-egg').classList.toggle('raccoon-egg-animation');
+});
+
 //******** Page Generation Functions
 
 // Create all the elements, add the info and add the rating in the array
