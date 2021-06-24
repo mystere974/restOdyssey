@@ -6,7 +6,7 @@ const courseToAdd = [
     {
         section: "classic",
         name: "falafels",
-        picture: {src:"ressources/desktop/classic-entree.jpg", alt:"velouté de tomate"},
+        picture: {src:"ressources/desktop/classic-entree.jpg", alt:"falafels"},
         info: "fresh - gluten free - nut free - lactose free"
     },
     {
@@ -60,6 +60,18 @@ const courseToAdd = [
 
 ] 
 
+const priceClasssicMenu = document.createElement('h5');
+priceClasssicMenu.innerHTML = "Menu HTML / entrée - plat - dessert 14€90";
+classicGallery.appendChild(priceClasssicMenu);
+
+const priceVeganMenu = document.createElement('h5');
+priceVeganMenu.innerHTML = "Menu CSS / entrée - plat - dessert 14€90";
+veganGallery.appendChild(priceVeganMenu);
+
+const priceSpicyMenu = document.createElement('h5');
+priceSpicyMenu.innerHTML = "Menu JS / entrée - plat - dessert 14€90";
+spicyGallery.appendChild(priceSpicyMenu);
+
 function createCard(courseToAdd) {
 
     const courseContainer = document.createElement('div'); // cree une div dans const courseContainer
@@ -77,6 +89,7 @@ function createCard(courseToAdd) {
     cardImg.src = courseToAdd.picture.src;
     cardImg.alt = courseToAdd.picture.alt;
     cardImg.classList.add("gallery-picture");
+    cardImg.classList.add("show-on-scroll");
     courseContainer.appendChild(cardImg); 
 
     const titleCard = document.createElement('h2');
@@ -129,4 +142,45 @@ for (let i = 0; i < btns.length; i++) {
         // Add the active class to the current/clicked button
         this.className += " active";
     });
+}
+
+// ANIMATION ON SCROLL //
+
+// scroll should be the window.requestAnimationFrame method
+const scroll = window.requestAnimationFrame ||
+    function(callback){ window.setTimeout(callback, 1000/60)};
+// grab the elements on the page we want to look out for.
+const elementsToShow = document.querySelectorAll('.show-on-scroll');
+// Let’s set up that looping function.
+function loop() {
+    elementsToShow.forEach(function (element) {
+        //  if it’s in the viewport > visible else invisible
+    if (isElementInViewport(element)) {
+        element.classList.add('is-visible');
+    } else {
+        element.classList.remove('is-visible');
+    }
+    });
+    scroll(loop);
+}
+// Call the loop for the first time
+loop();
+
+// Helper function from: http://stackoverflow.com/a/7557433/274826
+function isElementInViewport(el) {
+    // special bonus for those using jQuery
+    if (typeof jQuery === "function" && el instanceof jQuery) {
+    el = el[0];
+    }
+    var rect = el.getBoundingClientRect();
+    return (
+    (rect.top <= 0
+        && rect.bottom >= 0)
+    ||
+    (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.top <= (window.innerHeight || document.documentElement.clientHeight))
+    ||
+    (rect.top >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
+    );
 }
