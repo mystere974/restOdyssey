@@ -1,3 +1,17 @@
+/* Banner */
+
+#galleryHeader {
+  width: 100%;
+  z-index: 2;
+}
+
+#galleryBanner  img {
+  width: 100vw;
+  height: 30vh;
+}
+
+
+
 /* text and img */
 
 .title-main {
@@ -55,7 +69,7 @@
 
 footer {
  position: relative;
- margin-bottom: -160vh;
+ margin-bottom: -185vh;
 }
 
   
