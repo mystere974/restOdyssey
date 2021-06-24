@@ -25,25 +25,8 @@ h1 {
 } */
 
 #raccoon-egg {
-  position: absolute;
-  top: -0.7vh;
-  left: -50vw;
-  transform: scale(0.7) scaleX(-1);
+  display: none;
  }
-
-.raccoon-egg-animation {
-  animation: raccoon-move 3s ease-in-out;
-}
-
-@keyframes raccoon-move {
-  50% {
-    left: -5vw;
-  } 
-  100% {
-    left: -50vw;
-  }
-  
-}
 
 
 /****** Comments */
@@ -174,6 +157,28 @@ h1 {
         height: 30vh;
         line-height: 30vh;
         font-size: 4rem;
+    }
+
+    /****** Easter Egg */
+    #raccoon-egg {
+      display: block;
+      position: absolute;
+      top: -0.7vh;
+      left: -100vw;
+      transform: scale(0.7) scaleX(-1);
+     }
+    
+    .raccoon-egg-animation {
+      animation: raccoon-move 5s ease-in-out;
+    }
+    
+    @keyframes raccoon-move {
+      50% {
+        left: -5vw;
+      } 
+      100% {
+        left: -100vw;
+      } 
     }
 
     .opinions-rated {
