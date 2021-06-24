@@ -12,7 +12,9 @@
   width: 100%;
   margin: 0px auto;
   height: 30vh;
-  line-height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: beige;
   text-shadow: 2px 2px 3px black;
   font-size: 2rem;
@@ -107,7 +109,7 @@ footer {
 @media screen and (max-width: 680px) {
 
   #galleryHeader h1:hover {
-    width: auto;
+    display: none;
   }
 
   .image-texte-container {
