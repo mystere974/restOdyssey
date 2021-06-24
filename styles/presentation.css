@@ -18,6 +18,7 @@
   color: beige;
   text-shadow: 2px 2px 3px black;
   font-size: 2rem;
+  font-family: montserrat, sans-serif;
 }
 
 
@@ -67,6 +68,8 @@
   text-align: center;
   color: #8e8e8c;
   font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
   font-family: montserrat, sans-serif;
   padding: 20px;
   margin: 10px;
