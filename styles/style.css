@@ -1,71 +1,4 @@
-.event-body {
-  font-size: 125%;
-    font-weight: 700;
-    text-align: center;
-    color: #8e8e8c;
-    font-family: montserrat, sans-serif;
-}
 
-.event-container {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 20px;
-    }
-
-    .event-h1 {
-      text-align: center;
-      background: url("../ressources/cocktails.jpg") center/cover;
-      font-family: montserrat, sans-serif;
-      height: 30vh;
-      width: 100%;
-      line-height: 30vh;
-      color: white;
-      text-shadow: 2px 2px 3px black;
-    }
-
-    .span-event {
-      font-size: 20px;
-    }
-
-    .theme {
-    width: 300px;
-    height: 300px;
-    margin-top: 100px;
-    }
-
-.event-div {
-  width: 100%;
-  font-weight: normal;
-  margin: 0px auto;
-}
-
-    .style {
-        margin-top: 100px;
-        font-family: raleway , sans-serif;
-        color:  rgb(25, 25, 25);
-    }
-    .img-container {
-        text-align: center;
-        font-family: raleway , sans-serif;
-    }
-
-    @media screen and (max-width:375px)
-    {
-        .img-container {
-            max-width: 375px;
-        }
-        .theme {
-            min-width: 100px;
-        }
-        .event-container {
-            display: flex;
-            flex-flow: column;
-        }
-
-        .style-event{
-          margin-bottom: 70px;
-        }
-    }
 /* GENERAL */
 
 * {
@@ -167,7 +100,6 @@ footer p a {
 margin: auto;
 color: #fff;
 }
-
 
 .main-title {
   color: var(--main-bg-color);
