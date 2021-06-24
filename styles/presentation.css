@@ -53,6 +53,11 @@
   margin: 15px;
 }
 
+footer {
+ position: relative;
+ margin-bottom: -160vh;
+}
+
   
   /* animations texte presentation */
 
@@ -90,6 +95,10 @@
   .parag {
     max-width: 80%;
     margin-bottom: 30px;
+  }
+
+  footer {
+    display: none;
   }
 
 }
