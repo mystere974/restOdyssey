@@ -164,7 +164,6 @@
 .space {
     height: 10vh;
     width: 100%;
-    background-color:#fff;
 }
 
 /* FOOTER */
@@ -231,5 +230,9 @@ footer {
     #gallery h5 {
         font-size: 80%;
         padding: 5px;
+    }
+    .space {
+        height: 5vh;
+        width: 100%;
     }
 }
