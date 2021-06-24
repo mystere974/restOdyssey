@@ -92,6 +92,56 @@ body{
   overflow-x: hidden;
 }
 
+h1 {
+    font-size: 113%;
+    font-weight: 700;
+    font-family: montserrat, sans-serif;
+    text-align: center;
+    color: #fff;
+    text-shadow: 10px 10px 20px #a1a0a0, -10px -10px 20px #d9d8d8;
+} 
+
+h2 {
+  font-size: 219%;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #38424e;
+  font-family: montserrat, sans-serif;
+  text-align: center;
+  padding: 20px 0px 10px 0px;
+}
+
+h3 {
+  font-size: 125%;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: raleway, sans-serif;
+  text-align: center;
+  color: #F76C6C;
+  padding: 0px 0px 35px 0px;
+}
+
+h4 {
+  font-size: 125%;
+  font-weight: 700;
+  text-align: center;
+  color: #8e8e8c;
+  font-family: montserrat, sans-serif;
+  padding: 0px 0px 20px 0px;
+}
+
+/* couleur de selection texte*/
+::selection {
+  color: #fff;
+  text-shadow: none;
+  background: #F76C6C;
+}
+
+form-input:focus,
+form-textarea:focus {
+  border-color: #f39c12;
+}
+
 header {
   box-shadow: var(--box-shadow-color) 0 1px 7px;
   z-index: 1000;
@@ -196,7 +246,7 @@ color: #fff;
   content:"";
   width: 0;
   position:absolute;
-  transition: width 1s;
+  transition: width 0.3s;
 }
 .item a::after {
   top: -4px;
@@ -457,7 +507,7 @@ color: #fff;
   }
 
   .nav-burger-item a {
-    font-size:75%
+    font-size:75%;
   }
 
   .nav-active {

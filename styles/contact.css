@@ -54,6 +54,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-style: italic;
   cursor: pointer;
+  text-shadow: 1px 1px 2px #a1a0a0;
 }
 
 #contact-img {
