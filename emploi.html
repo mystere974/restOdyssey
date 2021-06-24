@@ -12,7 +12,7 @@
 </head>
 <body>
     <header class="nav-container">
-        <div class="logo"><a href="index.html"><img src="ressources/logoWildWhite.png" alt="Logo du site"></div>
+        <div class="logo"><a href="index.html"><img src="ressources/logoWildWhite.png" alt="Logo du site"></a></div>
         <nav class="navbar">
             <ul class="nav-items-container">
                 <li class="item"><a href="menu.html">Menu</a></li>
@@ -30,20 +30,19 @@
                 <li class="item"><a href="event.html">Evenements</a></li>
                 <li class="item mobile"><a href="presentation.html">Presentation</a></li>
                 <li class="item"><a href="avis.html">Livre d'or</a></li>
-                <li class="item"><a href="emploi.html">Rejoignez nous</a></li>
+                <li class="item"><a class="nav-active-color" href="emploi.html">Rejoignez nous</a></li>
             </ul>
         </nav>
     </header>
 
 <!-- Titre page emploi-->
-
 <h2>Faites partie de l'équipe !</h2>
     
 <!-- Présentation des valeurs de l'équipe-->
-
 <div class="flexbox1">
     <div class="valeurs">
-        <img src="ressources/emploi1.jpg">
+        <img src="ressources/emploi1.jpeg" class="table-img">
+        <div class="read-more"><a href="presentation.html">Read More</a></div>
     </div>
     <div class="valeurs">
         <h3>Nos valeurs</h3>
@@ -52,7 +51,8 @@
             Que votre domaine de compétence se tourne plutôt vers le front-end ou le back-end, nous mettons avant tout l'accent sur le côté humain de nos équipes, et sommes à la recherche de membres qui offreront la meilleure expérience possible à nos clients.</p>
     </div>
     <div class="valeurs">
-        <img src="ressources/emploi2.jpg">
+        <img src="ressources/emploi2.jpeg" class="table-img">
+        <div class="read-more">Read more</div>
     </div>
 </div>
 
@@ -60,7 +60,6 @@
 <h3>Nos offres</h3>
 <div class="flexbox2">
     <div class="offres" id="nos-offres">
-    
         <select>
         <option value="votre-domaine">Votre domaine</option>
         <option value="front-end-salle">Front-end: Service en salle</option>
@@ -75,14 +74,35 @@
         <p><i class="fi-xtluxl-envelope-text-thin"></i>Postulez pour de futures opportunités !</p>
     </div>
     <div class="offres" id="btn">
-        <button id="postule-btn">Je postule</button>
+        <button class="modal-btn">Je postule</button>
     </div>
-    
 </div>
+
+<!--Fenêtre pour candidater-->
+<div class="modal-bg">
+    <div class="modal">
+        <h4>Come aboard !</h4>
+        <label for="nom">Nom :</label>
+        <input type=text id="nom">
+        <label for="prenom">Prénom :</label>
+        <input type=text id="prenom">
+        <label for="email">E-mail :</label>
+        <input type=text id="email">
+        <label for="domaine">A quelle offre répondez-vous :</label>
+        <input type=text id="domaine">
+        <label for="dispo">A quelle date êtes-vous disponible :</label>
+        <input type=text id="dispo">
+        <label for="cv">Soumettre votre cv :</label>
+        <input type=text id="cv">
+        <button class="send-btn">Envoyer</button>
+        <span class="modal-close">X</span>
+    </div>
+</div>
+<!--Footer-->
 <footer>
     <p>© 2021 Racoon Team - Hébergement GitHub, <a href="mentions-legales.html" target='_blank'>À propos et mentions légales</a></p>
 </footer>
-
+<script src="scripts/emploi.js"></script>
 <script src="scripts/script.js"></script>
 </body>
 </html>

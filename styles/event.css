@@ -13,13 +13,14 @@
       
       .event-h1 {
         text-align: center;
-        background: url("../ressources/cocktails.jpg") center/cover;
+        background: url("../ressources/balloon.jpg") center/cover;
         font-family: montserrat, sans-serif;
         height: 30vh;
         width: 100%;
         line-height: 30vh;
         color: white;
         text-shadow: 2px 2px 3px black;
+        font-size: 2rem;
       }
   
       .span-event {

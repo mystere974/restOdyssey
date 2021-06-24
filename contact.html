@@ -17,7 +17,7 @@
                 <li class="item"><a href="menu.html">Menu</a></li>
                 <li class="item"><a href="reservation.html">Reservation</a></li>
                 <li class="item desktop"><a href="presentation.html">Presentation</a></li>
-                <li class="item"><a href="contact.html">Contact</a></li>
+                <li class="item"><a class="nav-active-color" href="contact.html">Contact</a></li>
             </ul>
             <div class="burger">
                 <div class="burger-line1"></div>
@@ -35,8 +35,9 @@
     </header>
 
     <section class="main">
-        <h1>Contactez Nous</h1>
-        <img src="ressources/contact2.jpg" alt="Background picture phone">
+        <h1 id="main-title" >Contactez Nous</h1>
+        <img id="contact-img" src="ressources/contact2.jpeg" alt="Background picture phone">
+        <img id="contact-racoon" src="ressources/shyRaccoon.png" alt="Racoon">
     </section>
 
     <section class="container">
@@ -54,18 +55,18 @@
                 </div>
 
                 <div class="adress-item">
-                    <img src="ressources/telephone.png" alt="Phone Icon">
-                    <p>06 42 16 74 09</p>
+                    <img id="adress-phone" src="ressources/telephone.png" alt="Phone Icon">
+                    <a href="tel:+336 42 16 74 09" target="_blank">06 42 16 74 09</a>
                 </div>
 
                 <div class="adress-item">
                     <img src="ressources/facebook.png" alt="Facebook Icon">
-                    <a href="https://fr-fr.facebook.com/wildcodeschool/posts/la-wildcodeschool-de-la-loupe-httpswwwfacebookcomwild-code-school-25065429196872/746355398846648/">FaceBook</a>
+                    <a href="https://fr-fr.facebook.com/wildcodeschool/posts/la-wildcodeschool-de-la-loupe-httpswwwfacebookcomwild-code-school-25065429196872/746355398846648/" target="_blank">FaceBook</a>
                 </div>
 
                 <div class="adress-item">
                     <img src="ressources/instagram.png" alt="Instragram Icon">
-                    <a href="https://www.instagram.com/wildlaloupe/">Instragram</a>
+                    <a href="https://www.instagram.com/wildlaloupe/" target="_blank">Instragram</a>
                 </div>
 
             </div>
@@ -83,26 +84,36 @@
             loading="lazy"></iframe>
         </section>
 
-        <section class="form-container">
+        <form class="form-container">
             <div class="form-items">
                 <label for="name">Nom :</label>
-                <input type="text" name="name" id="name" placeholder="Votre Nom.." required>
+                <input class="input" type="text" name="name" id="name" placeholder="Votre Nom.." required>
             </div>
             <div class="form-items">
                 <label for="mail">Email :</label>
-                <input type="mail" name="mail" id="mail" placeholder="Votre Email.." required>
+                <input class="input" type="email" name="mail" id="mail" placeholder="Votre Email.." required>
             </div>
             <div class="form-items">
                 <label for="message">Laissez un message :</label>
-                <textarea name="message" id="message" cols="40" rows="7" placeholder="Ecrivez votre message ici.." required></textarea>
+                <textarea class="input" name="message" id="message" cols="40" rows="6" placeholder="Ecrivez votre message ici.."  minlength="2" required></textarea>
             </div>
-            <input class="form-items form-submit" type="submit" value="Envoyer">
-        </section>
+            <div class="box-submit">
+                <input class="form-items form-submit" type="submit" value="Envoyer">
+            </div>
+        </form>
+
+        <div class="modal-bg">
+            <div class="modal">
+                <h2 class="modal-title"></h2>
+                <button class="modal-btn">Fermer</button>
+            </div>
+        </div>
 
     </section>
     <footer>
         <p>© 2021 Racoon Team - Hébergement GitHub, <a href="mentions-legales.html" target='_blank'>À propos et mentions légales</a></p>
     </footer>
     <script src="scripts/script.js"></script>
+    <script src="scripts/contact.js"></script>
 </body>
 </html>
