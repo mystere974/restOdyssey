@@ -127,7 +127,12 @@ h1 {
     transform: scale(1.2);
     background-color: #F76C6C;
     color: white;
+   /*
     box-shadow: 0px 0px 3px black;
+  */
+    box-shadow: 10px 10px 20px #a1a0a0, 
+                -10px -10px 20px #d9d8d8;
+
 }
 
 
