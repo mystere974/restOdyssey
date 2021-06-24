@@ -108,9 +108,6 @@ footer {
 
 @media screen and (max-width: 680px) {
 
-  #galleryHeader h1:hover {
-    display: none;
-  }
 
   .image-texte-container {
     display: flex;
