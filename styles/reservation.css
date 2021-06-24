@@ -139,7 +139,7 @@ a {
 #reservation-events-container {
     padding: 20px;
     background-color: #f9c9c880;
-    margin-bottom: 50px;
+    padding-bottom: 70px;
 }
 
 #reservation-events-container > * {
@@ -150,16 +150,12 @@ footer {
     position: relative;
 }
 
-@media screen and(min-width: 549px) {
+@media screen and(max-width: 549px) {
 
     h1 {
         height: 30vh;
         line-height: 30vh;
         font-size: 4rem;
-    }
-
-    #reservation-events-container {
-      margin-bottom: none;
     }
 
     .reservation-input-element {
