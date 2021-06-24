@@ -196,7 +196,7 @@ color: #fff;
   content:"";
   width: 0;
   position:absolute;
-  transition: width 1s;
+  transition: width 0.3s;
 }
 .item a::after {
   top: -4px;
@@ -457,7 +457,7 @@ color: #fff;
   }
 
   .nav-burger-item a {
-    font-size:75%
+    font-size:75%;
   }
 
   .nav-active {
