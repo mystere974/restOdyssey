@@ -1,4 +1,4 @@
- /*EMPLOI*/
+/*EMPLOI*/
 
 .banner {
     height: 30vh;
@@ -29,6 +29,7 @@ h3 {
 h4 {
   text-align: center;
   font-family: raleway, sans-serif;
+  padding: 10px;
 
 }
 .flexbox1 {
@@ -51,8 +52,8 @@ h4 {
 }
 
 .table-img {
-  max-width: 22vw;
-  min-width: 22vw;
+  max-width: 400px;
+  min-width: 400px;
   min-height: 60vh;
   max-height: 60vh;
   border-radius: 15px;
@@ -221,10 +222,6 @@ input, label {
 /*RESPONSIVE*/
 
 @media screen and (max-width: 1200px) {
-  .table-img {
-    min-width: 30vw;
-    max-width: 30vw;
-  }
   .modal {
     width: 70%;
   }
@@ -241,7 +238,7 @@ input, label {
   .valeurs > p {
     min-width: 60vh;
     padding: 20px;
-    line-height: 20px;
+    line-height: 25px;
     padding-bottom: 30px;
   }
 
@@ -250,21 +247,7 @@ input, label {
   }
 }
 
-
-@media screen and (max-width: 900px) {
-  .table-img {
-    min-width: 45vw;
-    max-width: 45vw;
-  }
-}
-
-
 @media screen and (max-width: 650px) {
-  .table-img {
-    min-width: 55vw;
-    max-width: 55vw;
-  }
-
   .valeurs > p {
     min-width: 60vh;
     padding: 20px;
