@@ -3,7 +3,6 @@
  .banner {
     height: 30vh;
     background: url('../ressources/banner-emploi.jpg') center/cover;
-    opacity: 0.7;
  }
 
   h2 {
@@ -14,7 +13,7 @@
     color:white;
     text-shadow:black 2px 2px;
     font-style: italic;
-    padding-top: 100px;
+    padding-top: 80px;
   }
   
   h3 {
@@ -44,14 +43,15 @@
   width: 30vw;
   max-height: 400px;
   text-align: justify;
-  line-height: 35px;
+  line-height: 30px;
   font-family: montserrat, sans-serif;
   margin-bottom: 20px;
+  margin-top: 0;
 }
 
 .table-img {
-  max-width: 25vw;
-  min-width: 25vw;
+  max-width: 22vw;
+  min-width: 22vw;
   min-height: 60vh;
   max-height: 60vh;
   border-radius: 15px;
@@ -205,6 +205,7 @@ input, label {
 
 .send-btn {
   margin-top: 8px;
+  padding: 15px;
 }
 
 .modal-close {
@@ -219,11 +220,11 @@ input, label {
 /*RESPONSIVE*/
 
 @media screen and (max-width: 1200px) {
+ 
   .table-img {
-    min-width: 35vw;
-    max-width: 35vw;
+    min-width: 30vw;
+    max-width: 30vw;
   }
-
   .modal {
     width: 70%;
   }
@@ -252,16 +253,16 @@ input, label {
 
 @media screen and (max-width: 900px) {
   .table-img {
-    min-width: 50vw;
-    max-width: 50vw;
+    min-width: 45vw;
+    max-width: 45vw;
   }
 }
 
 
 @media screen and (max-width: 650px) {
   .table-img {
-    min-width: 70vw;
-    max-width: 70vw;
+    min-width: 55vw;
+    max-width: 55vw;
   }
 
   .valeurs > p {
@@ -269,5 +270,12 @@ input, label {
     padding: 20px;
     line-height: 20px;
     padding-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .table-img {
+    min-width: 80vw;
+    max-width: 80vw;
   }
 }
