@@ -102,10 +102,7 @@
     color: #F76C6C;   
 }
 
-#nav-gallery .active {
-    text-decoration: underline;
-    color: #F76C6C;  
-}
+
 
 /* STICKY HEADER */
 /* The sticky class is added to the header with JS when it reaches its scroll position */
@@ -162,7 +159,13 @@
 
 .is-visible {
     opacity: 1;
-} 
+}
+
+.space {
+    height: 10vh;
+    width: 100%;
+    background-color:#fff;
+}
 
 /* FOOTER */
 footer {
