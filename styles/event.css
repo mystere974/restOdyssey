@@ -1,7 +1,6 @@
 .event-body {
     font-size: 125%;
       font-weight: 700;
-      text-align: center;
       color: #8e8e8c;
       font-family: montserrat, sans-serif;
   }
@@ -28,15 +27,16 @@
       }
   
       .theme {
-      width: 300px;
+      width: 350px;
       height: 300px;
       margin-top: 100px;
+      border-radius: 15px;
       }
       
-  .event-div { 
-    width: 100%;
-    font-weight: normal;
-    margin: 0px auto;
+    .event-div { 
+        width: 100%;
+        font-weight: normal;
+        margin: 0px auto;
   }
   
       .style {
@@ -49,24 +49,70 @@
           font-family: raleway , sans-serif;
       }
     
-      @media screen and (max-width:1050px)
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px black;
+            
+      }
+
+      .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 310px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        padding: 5px 0;
+        border-radius: 6px;
+        position:absolute;
+        z-index: 500;
+        transform: translate(-100%, -5%);
+      }
+
+      .tooltip:hover .tooltiptext {
+        visibility: visible;
+    }
+
+    .tooltip:hover img {
+        box-shadow: 10px 10px 20px #a1a0a0,
+                    -10px -10px 20px #d9d8d8;
+    }
+
+    .footer-event {
+        position: relative;
+    }
+   
+
+    
+      @media screen and (max-width:680px)
       {
           .img-container {
-              max-width: 1050px;
+              max-width: 680px;
+              
           }
           .theme {
               min-width: 100px;
+
           }
           .event-container {
               display: flex;
               flex-flow: column;
+              
           }
   
-          .style-event{
+          .style-event {
             margin-bottom: 70px;
+            width: 50%;
+            align-items: stretch;
           }
   
-          footer-event{
-            margin-bottom: -100vh ;
+          footer {
+              display: none;
           }
-      }
+          
+          .event-div {
+            align-items: stretch;
+            display: inline-block;
+          }
+    }
+      
