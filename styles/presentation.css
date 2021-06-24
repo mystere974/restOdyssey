@@ -1,13 +1,15 @@
 /* Banner */
 
 #galleryHeader {
-  width: 100%;
+  width: 100vw;
   z-index: 2;
 }
 
 #galleryBanner  img {
-  width: 100vw;
+  width: 100%;
+  object-fit: cover;
   height: 30vh;
+  
 }
 
 
