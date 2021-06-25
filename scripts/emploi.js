@@ -16,7 +16,7 @@ modalClose.addEventListener("click", function(){
 
 sendBtn.addEventListener("click", function(event){
     event.preventDefault();
-    alert("Merci d'avoir choisi l'Odysssey!");
+    alert("Merci d'avoir choisi l'Odyssey!");
 });
 
 tableImg.addEventListener("mouseover", function(){
