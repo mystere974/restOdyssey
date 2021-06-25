@@ -109,7 +109,7 @@ footer {
 
 /* presentation responsive */
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 1024px) {
 
 
   .image-texte-container {
@@ -127,7 +127,54 @@ footer {
   }
 
   footer {
-    display: none;
+    display: none !important;
   }
 
+
+
+
+@media screen and (max-width: 681px) {
+
+
+  .image-texte-container {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .image-texte-container img {
+    width: 80%;
+  }
+
+  .parag {
+    max-width: 80%;
+    margin-bottom: 30px;
+  }
+
+ 
+
 }
+
+@media screen and (max-width: 768px) {
+
+
+  .image-texte-container {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .image-texte-container img {
+    width: 80%;
+  }
+
+  .parag {
+    max-width: 80%;
+    margin-bottom: 30px;
+  }
+
+
+
+}
+
+
+
+
