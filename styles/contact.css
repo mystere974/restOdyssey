@@ -34,7 +34,7 @@ body {
 
 .main h1 {
   color: var(--main-bg-color);
-  text-transform: uppercase;
+  text-transform: none;
   font-weight: 400;
   font-size: 3vw;
   font-weight: 500;
@@ -299,6 +299,7 @@ footer {
   padding: 15px;
   line-height: 25px;
   word-spacing: 3px;
+  text-align: justify;
 }
 
 .modal-bg {
@@ -320,7 +321,7 @@ footer {
 .modal {
   background-color: var(--main-bg-color);
   width: 40%;
-  height: 20%;
+  height: 30%;
   border-radius: 5px;
   box-shadow: 0 0 15px var(--main-text-color);
   display: flex;
@@ -329,6 +330,7 @@ footer {
   align-items: center;
   text-align: justify;
 }
+
 
 .modal-bg-active {
   visibility: visible;
@@ -365,6 +367,10 @@ footer {
 
 
 @media screen and (max-width: 780px) {
+  .adress-container {
+    height: 50vh;
+  }
+  
   .adress-container h2 {
     color: var(--subtitle3-color);
   }
@@ -395,8 +401,21 @@ footer {
   }
 }
 
+@media screen and (max-width: 400px) {
+  .modal {
+    height: 45%;
+  }
+
 @media screen and (min-width: 1400px) {
   .adress-container a, .adress-container p {
     font-size: 1.5rem;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .adress-item-container {
+    flex-flow: column;
+    margin-top: 10px;
   }
 }
