@@ -61,15 +61,15 @@ const courseToAdd = [
 ] 
 
 const priceClasssicMenu = document.createElement('h5');
-priceClasssicMenu.innerHTML = "Menu HTML / entrée - plat - dessert 14€90";
+priceClasssicMenu.innerHTML = "Menu HTML";
 classicGallery.appendChild(priceClasssicMenu);
 
 const priceVeganMenu = document.createElement('h5');
-priceVeganMenu.innerHTML = "Menu CSS / entrée - plat - dessert 14€90";
+priceVeganMenu.innerHTML = "Menu CSS";
 veganGallery.appendChild(priceVeganMenu);
 
 const priceSpicyMenu = document.createElement('h5');
-priceSpicyMenu.innerHTML = "Menu JS / entrée - plat - dessert 14€90";
+priceSpicyMenu.innerHTML = "Menu JS";
 spicyGallery.appendChild(priceSpicyMenu);
 
 function createCard(courseToAdd) {
