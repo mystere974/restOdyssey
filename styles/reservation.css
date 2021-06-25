@@ -107,7 +107,7 @@ h2, h3 {
 
 #reservation-phone-container {
     margin: 30px auto;
-    padding: 10vh;
+    /*padding: 10vh;*/
     min-height: 30vh;
 }
 
@@ -150,27 +150,16 @@ footer {
     position: relative;
 }
 
-@media screen and(max-width: 549px) {
+@media screen and (max-width: 549px) {
 
     h1 {
         height: 30vh;
         line-height: 30vh;
-        font-size: 4rem;
+        font-size: 2rem;
     }
-
-    .reservation-input-element {
-        display: inline-block;
+    .phone-number {
+      font-size: 1.8rem;
     }
-
-    #phone-global-reservation {
-        display: flex;
-        justify-content: space-around;
-    }
-    #reservation-phone-container,#reservation-events-container {
-        width: 50%;
-        display: inline-block;
-    }
-
     footer {
         display: none;
     }

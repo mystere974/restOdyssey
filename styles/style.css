@@ -108,11 +108,13 @@ color: #fff;
   font-size: 7vw;
   font-style: italic;
   font-family: "Montserrat", sans-serif;
+  text-shadow: 1px 1px 2px #a1a0a0;
 }
 
 .sub-title {
   font-size: 4vw;
   font-weight: 500;
+  text-transform: none;
   color: var(--subtitle-color);
   font-family: "Raleway", sans-serif;
 }

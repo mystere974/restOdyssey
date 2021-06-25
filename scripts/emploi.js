@@ -25,8 +25,3 @@ tableImg.addEventListener("mouseover", function(){
 });
 
 
-// const tableImg = document.querySelectorAll(".table-img").forEach(tableImg => {
-//     tableImg.addEventListener("mouseover", event => {
-//         tableImg.classList.toggle("fade");    
-//     });
-// });

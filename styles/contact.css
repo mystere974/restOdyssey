@@ -1,18 +1,5 @@
 /* General */
 
-/* :root {
-  font-size: 16px;
-  font-family: raleway , sans-serif;
-  --main-bg-color: #fff;
-  --main-text-color: rgb(25, 25, 25);
-  --nav-bg-color: #38424e;
-  --nav-text-color: #fff;
-  --title-color: #38424e;
-  --subtitle-color: #8e8e8c;
-  --subtitle2-color: #F9C9C8;
-  --subtitle3-color: #F76C6C;
-} */
-
 body {
   height: 100vh;
 }
@@ -47,7 +34,7 @@ body {
 
 .main h1 {
   color: var(--main-bg-color);
-  text-transform: uppercase;
+  text-transform: none;
   font-weight: 400;
   font-size: 3vw;
   font-weight: 500;
@@ -116,7 +103,12 @@ body {
 }
 
 .adress-container h2 {
-  margin: 15px 0 30px 20px;
+  margin: 50px 0 30px 0;
+  font-size: 1.3rem;
+  text-align: left;
+  color: var(--main-text-color);
+  padding: 0;
+  text-align: center;
 }
 
 .adress-item-container {
@@ -126,6 +118,7 @@ body {
   align-items: center;
   width: 100%;
   height: 70%;
+  margin-top: 8vh;
 }
 
 .adress-item {
@@ -258,6 +251,8 @@ footer {
 }
 
 /* Responsive */
+
+
 @media screen and (max-width: 1100px) and (min-width: 780px) {
   .adress-item-container {
     flex-flow: column nowrap;
@@ -304,6 +299,7 @@ footer {
   padding: 15px;
   line-height: 25px;
   word-spacing: 3px;
+  text-align: justify;
 }
 
 .modal-bg {
@@ -325,7 +321,7 @@ footer {
 .modal {
   background-color: var(--main-bg-color);
   width: 40%;
-  height: 20%;
+  height: 30%;
   border-radius: 5px;
   box-shadow: 0 0 15px var(--main-text-color);
   display: flex;
@@ -334,6 +330,7 @@ footer {
   align-items: center;
   text-align: justify;
 }
+
 
 .modal-bg-active {
   visibility: visible;
@@ -368,6 +365,26 @@ footer {
   }
 }
 
+
+@media screen and (max-width: 780px) {
+  .adress-container {
+    height: 50vh;
+  }
+  
+  .adress-container h2 {
+    color: var(--subtitle3-color);
+  }
+
+  .adress-item p, .adress-item a  {
+    font-size:1.2rem
+  }
+
+  .adress-item p:hover, .adress-item a:hover {
+    color: var(--subtitle3-color);
+  }
+  .
+}
+
 @media screen and (max-width: 680px) {
   .modal {
     width: 70%;
@@ -380,7 +397,25 @@ footer {
 
   .adress-container h2 {
     color: var(--subtitle3-color);
-    text-align: center;
     margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .modal {
+    height: 45%;
+  }
+
+@media screen and (min-width: 1400px) {
+  .adress-container a, .adress-container p {
+    font-size: 1.5rem;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .adress-item-container {
+    flex-flow: column;
+    margin-top: 10px;
   }
 }
