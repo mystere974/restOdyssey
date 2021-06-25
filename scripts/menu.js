@@ -38,9 +38,9 @@ function menuCreate(num) {
   let menuList = [`Menu_zero`, `Menu HTML<br>"Le Classique"`, `Menu CSS<br>"Le Vegan"`, `Menu JavaScript<br>"L'épicé"`];
   let courseList = [`Entrée`, `Plat`, `Dessert`];
   let menuPitch = [`Menu_zero`,
-    `Pour nos clients qui veulent aller à l'essentiel, ce menu est un équilibre parfait entre structure `,
-    `Pour respecter le style de vie de chacun, notre chef a préparé ce menu végétal avec des produits frais de saison. Un régal pour les yeux et une cascade de saveur à chaque bouchée !`,
-    `Pour les papilles les plus averties, ce menu est le plus exotique Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum cum blanditiis fuga? Lorem ipsum dolor sit amet.`
+    `Pour nos clients qui veulent aller à l'essentiel, ce menu signature est équilibré et contient tous les bons ingrédients d'un repas réussi. Nos clients l'adorent, n'hésitez pas à consulter les avis ! `,
+    `Pour respecter le style de vie de chacun, notre chef a préparé ce menu végétal avec des produits frais. Un régal pour les yeux et une cascade de saveur à chaque bouchée !`,
+    `Pour les papilles les plus averties, ce menu est le plus exotique. Son sandwich au poulet croustillant (c'est la vie) et sa sauce épicée ravira les afficionados du voyage.`
   ]
   let menus = [
     [`Entree 0`, `Falafels de pois chiches et sa sauce blanche`, `Salade de Tofu et noix de cajou`, `Gambas harissa`],
