@@ -9,6 +9,8 @@
       display: flex;
       justify-content: space-around;
       margin-bottom: 20px;
+      font-style: italic;
+      border-radius: 6px;
       }
       
       .event-h1 {
@@ -54,6 +56,7 @@
             position: relative;
             display: inline-block;
             border-bottom: 1px black;
+            
             
       }
 
