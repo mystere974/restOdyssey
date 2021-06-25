@@ -164,7 +164,7 @@ h1 {
       display: block;
       position: absolute;
       top: -0.7vh;
-      left: -50vw;
+      left: -100vw;
       transform: scale(0.7) scaleX(-1);
      }
     
