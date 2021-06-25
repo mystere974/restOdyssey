@@ -1,113 +1,51 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles/style.css">
-        <link rel="stylesheet" href="styles/menu.css">
-        <title>l'Odyssey</title>
-    </head>
-    <body>
-        <header class="nav-container">
-            <div class="logo"><a href="index.html"><img src="ressources/logoWildWhite.png" alt="Logo du site"></a></div>
-            <nav class="navbar">
-                <ul class="nav-items-container">
-                    <li class="item"><a class="nav-active-color" href="menu.html">Menu</a></li>
-                    <li class="item"><a href="reservation.html">Reservations</a></li>
-                    <li class="item desktop"><a href="presentation.html">Presentation</a></li>
-                    <li class="item"><a href="contact.html">Contact</a></li>
-                </ul>
-                <div class="burger">
-                    <div class="burger-line1"></div>
-                    <div class="burger-line2"></div>
-                    <div class="burger-line3"></div>
-                </div>
-                <ul class="nav-burger-item">
-                    <li class="item"><a href="galerie.html">Galerie</a></li>
-                    <li class="item"><a href="event.html">Evenements</a></li>
-                    <li class="item mobile"><a href="presentation.html">Presentation</a></li>
-                    <li class="item"><a href="avis.html">Livre d'or</a></li>
-                    <li class="item"><a href="emploi.html">Rejoignez nous</a></li>
-                </ul>
-            </nav>
-        </header>
-    
-    <container id="carte">
-        <!-- menu1 -->
-        <div class = "menu" id = "menu1">
-            <div class = "menu-top">
-                <h2>Menu HTML
-                    <br>
-                    "Le classique"
-                </h2>
-                <img class = "menu-img" src="ressources/menu/img-menu1-html.jfif" alt="Menu 1 : HTML">
-                <p>Pour nos clients qui veulent aller à l'essentiel. Ce délicieux sandwich à la viande de boeuf sélectionnée avec nos partenaires...Equilibre parfait Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur alias rerum minus.</p>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Raleway:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/menu.css">
+    <title>l'Odyssey</title>
+</head>
+
+<body>
+    <header class="nav-container">
+        <div class="logo"><a href="index.html"><img src="ressources/logoWildWhite.png" alt="Logo du site"></a></div>
+        <nav class="navbar">
+            <ul class="nav-items-container">
+                <li class="item"><a href="menu.html">Menu</a></li>
+                <li class="item"><a href="reservation.html">Reservations</a></li>
+                <li class="item desktop"><a href="presentation.html">Presentation</a></li>
+                <li class="item"><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="burger-line1"></div>
+                <div class="burger-line2"></div>
+                <div class="burger-line3"></div>
             </div>
-            
-            <p class = "drop-down" onclick="youSeeMe(1)">click to show/hide</p>
-            <div class = "menu-bottom" id = "bottom1">
-                <p class = "menu-courses">Entrée</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ex nobis nisi?</p>
-                <p class = "menu-courses">Plat</p>
-                <p>Burger boucher Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto magnam odit at dignissimos voluptas delectus quas veritatis deleniti ipsum rem perspiciatis, consequuntur ducimus tempore?.</p>
-                <p class = "menu-courses">Dessert</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <button class = "button-price">Prix : 14,90 €</button>
-        </div>
-        <!-- menu2 -->
-        <div class = "menu" id = "menu2">
-            <div class = "menu-top">
-                <h2>Menu CSS
-                    <br>
-                    "Le vegan"
-                </h2>
-                <img class = "menu-img" src="ressources/menu/img-menu2-css.jfif" alt="Menu 2 : CSS">
-                <p>Soucieux de répondre au style de vie de chacun, notre chef a préparé ce sandwich végétal avec des produits de saison. Une cascade de saveurs à chaque bouchée... Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt</p>
-            </div>
-            <p class = "drop-down" onclick="youSeeMe(2)">click to show/hide</p>
-            <div class = "menu-bottom" id = "bottom2">
-                <p class = "menu-courses">Entrée</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ex nobis nisi?</p>
-                <p class = "menu-courses">Plat</p>
-                <p>Pain burger au sésame, consectetur adipisicing elit. Architecto magnam odit at dignissimos voluptas delectus quas veritatis deleniti ipsum rem perspiciatis, consequuntur ducimus tempore?.</p>
-                <p class = "menu-courses">Dessert</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <button class = "button-price">Prix : 14,90 €</button>
-        </div>
-        <!-- menu3 -->
-        <div class = "menu" id = "menu3">
-            <div class = "menu-top">
-                <h2>Menu JavaScript
-                    <br>
-                    "L'épicé"
-                </h2>
-                <img class = "menu-img" src="ressources/menu/img-menu3-js.jfif" alt="Menu 3 : JavaScript">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt debitis tenetur distinctio amet a nam atque qui ipsam eligendi, nihil soluta vel omnis. Dolore, enim. Aspernatur nam blanditiis adipisci exercitationem!</p>
-            </div>
-            <p class = "drop-down" onclick="youSeeMe(3)">click to show/hide</p>
-            <div class = "menu-bottom" id = "bottom3">
-                <p class = "menu-courses">Entrée</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ex nobis nisi?</p>
-                <p class = "menu-courses">Plat</p>
-                <p>Burger fermier aux épices cajun (pain burger à l'encre de seiche, filets de poulet panés, tranche de Grand Suisse, pousses de salade, avocat, oignon rouge, épices Cajun).
-                    <br>Servi avec ses frites et une sauce pimentée.
-                </p>
-                <p class = "menu-courses">Dessert</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <button class = "button-price">Prix : 14,90 €</button>
-        </div>
-    </container>
+            <ul class="nav-burger-item">
+                <li class="item"><a href="galerie.html">Galerie</a></li>
+                <li class="item"><a href="event.html">Evenements</a></li>
+                <li class="item mobile"><a href="presentation.html">Presentation</a></li>
+                <li class="item"><a href="avis.html">Livre d'or</a></li>
+                <li class="item"><a href="emploi.html">Rejoignez nous</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- <div class = "banner"></div>
+    <container class = "container-menu"></container> -->
 
     <script src="scripts/script.js"></script>
     <script src="scripts/menu.js"></script>
     <footer>
-        <p>© 2021 Racoon Team - Hébergement GitHub, <a href="mentions-legales.html" target='_blank'>À propos et mentions légales</a></p>
+        <p>© 2021 Racoon Team - Hébergement GitHub, <a href="mentions-legales.html" target='_blank'>À propos et mentions
+                légales</a></p>
     </footer>
 </body>
 
