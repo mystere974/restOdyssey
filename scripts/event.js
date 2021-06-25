@@ -4,13 +4,13 @@
     Effectuer une boucle qui check tout le tableau et insère les images et les titres*/
 
     const instructors = [ {
-        paragraphe: "mariage",
+        paragraphe: "Mariages",
         source: "../ressources/wedding.jpeg",
         bulle: "Une salle de 3000m2 est à votre disposition ainsi qu'un traiteur et des serveurs.",
         alt: "image de mariage"
     }, 
     {
-        paragraphe: "dancing",
+        paragraphe: "Dancing",
         source: "../ressources/tango.jpeg",
         bulle: "Tous les jeudis, nous proposons des cours de danse.",
         alt: "image de concert"
@@ -18,11 +18,11 @@
     {
         paragraphe:"Réunion de travail",
         source: "ressources/meeting.jpeg",
-        bulle: "Nous disposons de bureau équipé ainsi qu'un trés haut débit internet.",
+        bulle: "Nous disposons de bureaux équipés ainsi qu'un très haut débit internet.",
         alt: "image de réunion de travail"
     },
     {
-        paragraphe:"concert",
+        paragraphe:"Concerts",
         source:"../ressources/cheers.jpeg",
         bulle:"Tous les 1er vendredi du mois, un artiste nous fait l'honneur de se produire chez nous.",
         alt: "image de concert"
